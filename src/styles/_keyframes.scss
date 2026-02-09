@@ -1,0 +1,17 @@
+
+@keyframes contourReveal {
+  0% {
+    transform: scaleX(0);
+    opacity: 0.6;
+  }
+  45% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+

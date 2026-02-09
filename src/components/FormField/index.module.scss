@@ -1,0 +1,84 @@
+.field {
+  flex: 1;
+  min-width: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #444;
+  font-size: 14px;
+}
+
+.control {
+  width: 100%;
+  padding: 14px 14px;
+  background-color: #F3F3F3;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+
+  &::placeholder {
+    color: #6C6C6C;
+  }
+}
+
+.selectWrap {
+  width: 100%;
+  position: relative;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  color: #6C6C6C;
+}
+
+.chevron {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%) rotate(0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  color: #6C6C6C;
+  font-size: 12px;
+  transition: transform 0.2s ease;
+
+  &.chevronOpen {
+    transform: translateY(-50%) rotate(180deg);
+  }
+}
+
+.select {
+  width: 100%;
+  padding: 11.2px 36px 13px 11.2px;
+  background-color: transparent;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  color: inherit;
+  min-height: 49px;
+color: #6C6C6C;
+  &:focus {
+    outline: none;
+  }
+
+  option {
+    background-color: #fff;
+    color: #333;
+  }
+}
+
+.error {
+  display: block;
+  font-size: 12px;
+  color: #c00;
+  margin-top: 4px;
+}

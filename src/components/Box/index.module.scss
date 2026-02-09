@@ -1,0 +1,19 @@
+.box {
+  background: #F6F5FD;
+  padding: 14px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 14px 0 rgba(233, 241, 252, 0.20);
+  border: 1px solid rgba(106, 90, 224, 0.06);
+  margin-bottom: 24px;
+  font-size: 14px;
+
+  h5 {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

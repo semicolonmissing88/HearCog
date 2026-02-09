@@ -1,10 +1,54 @@
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
       font-family: 'General Sans', system-ui, -apple-system, sans-serif;
-      font-weight: 600;
+      font-weight: 500;
       line-height: 1.2;
       color: #011632;
+      margin-bottom: 18px;
+
+      &.heading {
+            position: relative;
+
+            &::after {
+                  content: '';
+                  display: block;
+                  width: 100%;
+                  max-width: 80%;
+                  height: 9.072px;
+                  margin-top: 8px;
+                  transform-origin: left;
+                  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='381' height='10' viewBox='0 0 381 10' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.75835 1.68631C16.8335 2.2401 38.0553 2.26779 95.6645 2.32317C185.623 2.40624 257.019 3.01541 276.862 3.90147C278.438 3.98454 152.338 4.59371 139.388 4.15068C119.201 3.43075 22.7913 4.03992 3.3913 4.87061C-2.12342 5.09213 -0.0553765 5.86744 3.53904 6.03358C9.15221 6.31047 24.2193 6.28278 65.5305 6.2274C94.5812 6.19971 325.707 6.83657 350.966 7.97185C365.147 8.60871 373.764 9.19019 377.703 9.05174C381.002 8.94098 381.051 8.60871 378.195 7.69495C376.275 7.08578 378.441 6.72581 379.82 6.55968C381.937 6.28278 381.051 5.34133 378.392 4.59371C374.798 3.5692 368.594 3.59689 371.548 4.6214C372.188 4.84292 372.336 5.39671 370.071 5.28595C363.473 4.95368 316.844 2.68313 304.19 2.29548C169.079 -1.91334 37.2182 1.1602 9.29992 0.135686C-0.597022 -0.251968 3.93299 1.35403 8.75835 1.68631Z' fill='%23F0B800'/%3E%3C/svg%3E");
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  background-color: transparent;
+                  animation: contourReveal 3s cubic-bezier(0.22, 1, 0.36, 1) 0.3s infinite alternate;
+            }
+      }
 }
 
-h1{
+h1 {
       font-size: 60px;
+      font-weight: 600;
+}
+h2{
+      font-size: 36px;
+}
+h5{
+      font-weight: 600;
+}
+
+
+b {
+      font-weight: 500;
+      font-size: 13px;
+      display: block;
+      color: #C09CF3;
+}
+
+small {
+      font-weight: 500;
 }

@@ -1,0 +1,53 @@
+.bgHolder {
+      background-color: rgba(106, 90, 224, 0.3);
+      border-radius: 10px;
+      padding: 35px;
+}
+
+.customCard {
+      background: #fff;
+      text-align: center;
+      font-size: 15px;
+      color: #3C4959;
+
+      .icon {
+            width: 60px;
+            margin: 0 auto 18px auto;
+
+            img {
+                  box-shadow: 3px 1px 10px 0 #C09CF3;
+                  border-radius: 50%;
+                  width: 100%;
+                  animation: shadowPulse 2.5s ease-in-out infinite, iconShake 3s ease-in-out infinite;
+            }
+      }
+}
+
+@keyframes iconShake {
+
+      0%,
+      100% {
+            transform: rotate(0deg);
+      }
+
+      25% {
+            transform: rotate(-6deg);
+      }
+
+      75% {
+            transform: rotate(6deg);
+      }
+}
+
+
+@keyframes shadowPulse {
+
+      0%,
+      100% {
+            box-shadow: 3px 1px 10px 0 #C09CF3;
+      }
+
+      50% {
+            box-shadow: 3px 1px 18px 4px rgba(192, 156, 243, 0.6);
+      }
+}
