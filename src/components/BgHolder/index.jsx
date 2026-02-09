@@ -41,7 +41,7 @@ function BgHolder() {
             {
             data.map((item) => (
               <Col md={3} key={item.id}>
-              <div class={'card ' + styles.customCard}>
+              <div className={'card ' + styles.customCard}>
                <div className={styles.icon}>
                  <Image src={item.icon} alt={item.title} />
                </div>
