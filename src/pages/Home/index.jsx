@@ -7,26 +7,31 @@ import ProfessionalServices from "../../components/ProfessionalServices";
 import FAQ from "../../components/FAQ";
 import Testimonials from "../../components/Testimonials";
 import Cta from "../../components/Cta";
+import data from "./data.json";
 import bannerImg from "../../assets/images/banner.png";
+import service1 from "../../assets/images/service1.png";
+import service2 from "../../assets/images/service2.png";
+import service3 from "../../assets/images/service3.png";
+import service4 from "../../assets/images/service4.png";
 
-const BANNER_DATA = {
-  heading: "Hear It Right. Know Where to Go.",
-  description:
-    "A nationwide network connecting patients with qualified hearing-care professionals within 25 miles—ensuring personalized, trusted care close to home.",
-  buttonText: "Start Your Hearing Journey",
-  contactTitle: "24/7 Hearing Care Assistance",
-  contactPhone: "0900-78601",
+const bannerData = {
+  ...data.BANNER_DATA,
   image: bannerImg,
-  imageAlt: "Banner",
 };
+
+const serviceImages = { "service1.png": service1, "service2.png": service2, "service3.png": service3, "service4.png": service4 };
+const professionalServicesData = data.PROFESSIONAL_SERVICES.map((s) => ({
+  ...s,
+  image: serviceImages[s.image],
+}));
 
 function Home() {
   return (
     <>
-      <Banner data={BANNER_DATA} />
+      <Banner data={bannerData} />
       <BgHolder />
       <FindProvider />
-      <ProfessionalServices />
+      <ProfessionalServices services={professionalServicesData} />
       <OurCompetitive />
       <CardSection />
       <Testimonials />

@@ -14,8 +14,17 @@ import valueIcon3 from "../../assets/Icons/i3.svg";
 import valueIcon4 from "../../assets/Icons/i4.svg";
 import valueIcon5 from "../../assets/Icons/i5.svg";
 import valueIcon6 from "../../assets/Icons/i6.svg";
+import aboutIcon from "../../assets/Icons/abt1.svg";
+import aboutIcon2 from "../../assets/Icons/abt2.svg";
+import aboutIcon3 from "../../assets/Icons/abt3.svg";
+import aboutImg from "../../assets/images/abt1.png";
+import ProfessionalServices from "../../components/ProfessionalServices";
+
 
 const valueIcons = [valueIcon1, valueIcon2, valueIcon3, valueIcon4, valueIcon5, valueIcon6];
+
+const whyIcons = { "abt1.svg": aboutIcon, "abt2.svg": aboutIcon2, "abt3.svg": aboutIcon3 };
+const whyImages = { "abt1.png": aboutImg };
 
 const bannerData = {
   ...data.BANNER_DATA,
@@ -25,6 +34,12 @@ const bannerData = {
     icon: [icon1, icon2][i] ?? stat.icon,
   })),
 };
+
+const serviceImages = { "dummy.png": bannerImg };
+const professionalServicesData = (data.PROFESSIONAL_SERVICES ?? data.WHY_HEARCOG?.PROFESSIONAL_SERVICES ?? []).map((s) => ({
+  ...s,
+  image: serviceImages[s.image],
+}));
 
 function About() {
   return (
@@ -59,7 +74,7 @@ function About() {
               <Col key={card.id} lg={4} className="mb-4">
                 <Card>
                   <Image className="mb-4 iconAnimation" width={50} height={50} src={valueIcons[i]} alt={card.title} />
-                  <h5 className="fw-medium">{card.title}</h5>
+                  <h5 className="fw-normal">{card.title}</h5>
                   <p>{card.description}</p>
                 </Card>
               </Col>
@@ -67,6 +82,58 @@ function About() {
           </Row>
         </Container>
       </section>
+      <section className="section">
+        <SectionHeading
+          title={data.WHY_HEARCOG.sectionTitle}
+          desc={data.WHY_HEARCOG.sectionDesc}
+        />
+        <Container>
+          <Row className="align-items-stretch">
+            <Col lg={6} className="mb-4 d-flex flex-lg-column justify-content-between">
+              {data.WHY_HEARCOG.leftCards.map((card, idx) => (
+                <Card key={card.id} className={idx === 0 ? "mb-4" : ""} style={{ minHeight: "unset" }}>
+                  <Image className="mb-4 iconAnimation" width={50} height={50} src={whyIcons[card.icon]} alt={card.title} />
+                  <h5 className="fw-normal">{card.title}</h5>
+                  {card.intro && <p>{card.intro}</p>}
+                  {card.listItems?.length > 0 && (
+                    <ul className="list">
+                      {card.listItems.map((item, i) => (
+                        <li key={i}>{item}</li>
+                      ))}
+                    </ul>
+                  )}
+                  {card.paragraphs?.map((text, i) => (
+                    <p key={i}>{text}</p>
+                  ))}
+                </Card>
+              ))}
+            </Col>
+            <Col lg={6} className="mb-4 d-flex flex-lg-column justify-content-between">
+              <div className="imgBox mb-4">
+                <Image src={whyImages[data.WHY_HEARCOG.rightImage]} alt="" />
+              </div>
+              {data.WHY_HEARCOG.rightCards.map((card) => (
+                <Card key={card.id} style={{ minHeight: "unset" }}>
+                  <Image className="mb-4 iconAnimation" width={50} height={50} src={whyIcons[card.icon]} alt={card.title} />
+                  <h5 className="fw-normal">{card.title}</h5>
+                  {card.intro && <p>{card.intro}</p>}
+                  {card.listItems?.length > 0 && (
+                    <ul className="list">
+                      {card.listItems.map((item, i) => (
+                        <li key={i}>{item}</li>
+                      ))}
+                    </ul>
+                  )}
+                  {card.paragraphs?.map((text, i) => (
+                    <p key={i}>{text}</p>
+                  ))}
+                </Card>
+              ))}
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      {professionalServicesData.length > 0 && <ProfessionalServices aboutUs services={professionalServicesData} />}
       <Testimonials />
       <FAQ />
       <Cta />

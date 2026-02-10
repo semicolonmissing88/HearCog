@@ -58,3 +58,16 @@
             
       }
 }
+
+.arrowBtn{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 600;
+      color: #C09CF3;
+      &:hover{
+            color: #4C1D95;
+            text-decoration: none;
+      }
+
+}

@@ -42,6 +42,75 @@
     { "id": 3, "icon": "i3.svg", "title": "Clarity", "description": "Clear communication, transparent processes, and honest guidance are at the heart of everything we do." },
     { "id": 4, "icon": "i4.svg", "title": "Privacy & Trust", "description": "Your personal information and health data are protected with industry-leading security and confidentiality standards." },
     { "id": 5, "icon": "i5.svg", "title": "Continuous Care", "description": "Our relationship doesn't end after your first visit. We provide ongoing support, adjustments, and follow-ups." },
-    { "id": 6, "icon": "i6.svg", "title": "Commitment to Innovation", "description": "We embrace the latest hearing care technologies to deliver advanced solutions that enhance hearing health and quality of life." }
-  ]
+    {
+      "id": 6,
+      "icon": "i6.svg",
+      "title": "Commitment to Innovation",
+      "description": "We embrace the latest hearing care technologies to deliver advanced solutions that enhance hearing health and quality of life."
+    }
+  ],
+  "WHY_HEARCOG": {
+    "sectionTitle": "Why HearCog Is More Than Access to Care.",
+    "sectionDesc": "HearCog was not created simply to make hearing care easier to find. It was designed to protect patients, elevate clinical standards, and preserve the medical integrity of hearing healthcare in a rapidly commoditized marketplace. Unlike general directories or consumer marketplaces, HearCog is built on the principle that hearing is brain care.",
+    "leftCards": [
+      {
+        "id": 1,
+        "icon": "abt1.svg",
+        "title": "Licensed Professionals",
+        "listItems": [
+          "Properly licensed within their scope of practice",
+          "Trained in prescription-based fitting protocols",
+          "Accountable to professional and regulatory standards",
+          "Skilled in verification, validation, and long-term management"
+        ],
+        "paragraphs": ["Hearing aids are medical devices when properly prescribed and fitted. HearCog exists to protect that distinction."]
+      },
+      {
+        "id": 2,
+        "icon": "abt2.svg",
+        "title": "Hearing Is Brain Care",
+        "intro": "Decades of clinical research show that untreated hearing loss is associated with:",
+        "listItems": ["Accelerated cognitive decline", "Increased risk of dementia", "Social isolation and depression", "Reduced quality of life"],
+        "paragraphs": [
+          "Hearing healthcare is therefore not a retail transaction - it is a clinical intervention that impacts long-term brain health.",
+          "HearCog exists to ensure patients are guided toward qualified, licensed hearing healthcare professionals capable of delivering proper diagnostic testing interpretation, and treatment."
+        ]
+      }
+    ],
+    "rightImage": "abt1.png",
+    "rightCards": [
+      {
+        "id": 3,
+        "icon": "abt3.svg",
+        "title": "Care Built on Ethics, Evidence, and Accountability",
+        "intro": "HearCog is designed around ethical, patient-first care, emphasizing:",
+        "listItems": ["Comprehensive diagnostic evaluations", "Evidence-based treatment recommendations", "Professional accountability", "Ongoing care, counseling, and follow-up"],
+        "paragraphs": ["Access without standards is not care. HearCog enforces standards."]
+      }
+    ],
+    "PROFESSIONAL_SERVICES": [
+      {
+        "id": 1,
+        "badgeText": "For Professionals",
+        "title": "Supporting Professionals",
+        "intro": "We collaborate with audiologists, ENT specialists, and healthcare providers to deliver comprehensive care. Our platform enables seamless referrals, shared patient insights, and coordinated treatment plans.",
+        "list": ["Secure data sharing and collaboration tools", "Evidence-based treatment protocols", "Continuing education and professional development"],
+        "buttonText": "Learn more",
+        "buttonLink": "/assessment-testing",
+        "image": "dummy.png",
+        "imageAlt": "Assessment & Testing"
+      },
+      {
+        "id": 1,
+        "badgeText": "For Patients",
+        "title": "Empowering Informed Decisions",
+        "intro": "We believe patients should understand their hearing health fully. Through clear communication, detailed assessments, and transparent guidance, we help you make confident choices about your care.",
+        "list": ["Easy-to-understand test results and reports", "Personalized treatment options explained clearly", "Ongoing education and support resources"],
+        "buttonText": "Learn more",
+        "buttonLink": "/assessment-testing",
+        "image": "dummy.png",
+        "imageAlt": "Assessment & Testing"
+      }
+    ]
+  }
 }

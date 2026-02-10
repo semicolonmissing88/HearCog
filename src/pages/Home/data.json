@@ -1,0 +1,73 @@
+{
+  "BANNER_DATA": {
+    "heading": "Hear It Right. Know Where to Go.",
+    "description": "A nationwide network connecting patients with qualified hearing-care professionals within 25 miles—ensuring personalized, trusted care close to home.",
+    "buttonText": "Start Your Hearing Journey",
+    "contactTitle": "24/7 Hearing Care Assistance",
+    "contactPhone": "0900-78601",
+    "image": "banner.png",
+    "imageAlt": "Banner"
+  },
+  "PROFESSIONAL_SERVICES": [
+    {
+      "id": 1,
+      "title": "Assessment & Testing",
+      "intro": "Every hearing journey begins with proper evaluation. We connect patients with qualified professionals who conduct thorough assessments to understand the full scope of hearing and auditory health.",
+      "list": [
+        "Detailed hearing history and symptom review",
+        "Objective and subjective hearing tests",
+        "Medical condition screening and risk identification"
+      ],
+      "closing": "These evaluations help ensure that hearing concerns are addressed correctly—before any treatment decisions are made.",
+      "buttonText": "Start a Hearing Assessment",
+      "buttonLink": "/assessment-testing",
+      "image": "service1.png",
+      "imageAlt": "Assessment & Testing"
+    },
+    {
+      "id": 2,
+      "title": "Fitting & Verification",
+      "intro": "When hearing solutions are recommended, precision and verification are essential. Our network professionals follow best practices to ensure accuracy, comfort, and effectiveness.",
+      "list": [
+        "Ear measurements and impressions when required",
+        "Careful selection and programming of hearing solutions",
+        "Objective verification using software-based measurements"
+      ],
+      "closing": "This process ensures that any recommended solution is clinically appropriate and properly validated.",
+      "buttonText": "Find a Verified Hearing Professional",
+      "buttonLink": "/find-provider",
+      "image": "service2.png",
+      "imageAlt": "Fitting & Verification"
+    },
+    {
+      "id": 3,
+      "title": "Rehabilitation & Ongoing Care",
+      "intro": "Hearing care does not end with an initial solution. Long-term support and rehabilitation are critical for communication success and cognitive well-being.",
+      "list": [
+        "Hearing rehabilitation and communication strategies",
+        "Adjustments based on lifestyle and hearing changes",
+        "Counseling and patient education"
+      ],
+      "closing": "This approach helps patients adapt effectively and maintain long-term hearing health.",
+      "buttonText": "Explore Ongoing Hearing Support",
+      "buttonLink": "/ongoing-hearing-support",
+      "image": "service3.png",
+      "imageAlt": "Rehabilitation & Ongoing Care"
+    },
+    {
+      "id": 4,
+      "title": "Collaboration & Excellence",
+      "intro": "Quality hearing care relies on collaboration. Our platform supports coordination among hearing professionals, medical specialists, and referral sources to ensure consistent, high-standard care.",
+      "list": [
+        "Evidence-based clinical decision support",
+        "Outcome tracking and quality assurance",
+        "Ongoing professional education and engagement"
+      ],
+      "closing": "By strengthening professional collaboration, we help improve care quality across the entire hearing healthcare journey.",
+      "buttonText": "Learn How We Support Quality Care",
+      "buttonLink": "/quality-care",
+      "image": "service4.png",
+      "imageAlt": "Collaboration & Excellence"
+    }
+  ]
+}
