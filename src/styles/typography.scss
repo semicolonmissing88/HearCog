@@ -69,6 +69,9 @@ h2{
 }
 h5{
       font-weight: 600;
+      @include bp.below(bp.$bp-md) {
+            font-size: 16px;
+      }
 }
 
 

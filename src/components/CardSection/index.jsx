@@ -40,7 +40,7 @@ const LIST_ITEMS_ROW2 = [
 ];
 
 const ROWS = [
-  { reverse: false, rowClass: "mb-5", lightCard: LIGHT_CARD, listItems: LIST_ITEMS },
+  { reverse: false, rowClass: "mb-lg-5 mb-4", lightCard: LIGHT_CARD, listItems: LIST_ITEMS },
   { reverse: true, rowClass: "", lightCard: LIGHT_CARD_GREEN, listItems: LIST_ITEMS_ROW2 },
 ];
 
@@ -53,24 +53,18 @@ function CardSection() {
           const firstZoom = index === 0 ? "zoomIn" : "zoomOut";
           const secondZoom = index === 0 ? "zoomOut" : "zoomIn";
           return (
-            <Row
-              key={index}
-              className={`align-items-stretch justify-content-between ${row.rowClass} ${row.reverse ? "flex-lg-row-reverse" : ""}`}
-            >
-              <Col lg={5}>
-                <ScrollReveal animation={firstZoom} delay={baseDelay}>
-                  <Card className={`${styles.card} ${row.lightCard.cardClass}`}>
-                    <h2 className={row.lightCard.titleClass}>{row.lightCard.title}</h2>
-                    <p>{row.lightCard.intro}</p>
-                    <div className={`imgBox ${styles.imgBox}`}>
-                      <Image src={row.lightCard.image} alt={row.lightCard.imageAlt} />
-                    </div>
-                  </Card>
+            <Row key={index} className={`align-items-stretch justify-content-between ${row.rowClass} ${row.reverse ? "flex-lg-row-reverse" : ""}`}>
+              <Col lg={5} className="mb-lg-0 mb-4">
+                <ScrollReveal animation={firstZoom} delay={baseDelay} as="div" className={`${styles.card} ${row.lightCard.cardClass}`}>
+                  <h2 className={row.lightCard.titleClass}>{row.lightCard.title}</h2>
+                  <p>{row.lightCard.intro}</p>
+                  <div className={`imgBox ${styles.imgBox}`}>
+                    <Image src={row.lightCard.image} alt={row.lightCard.imageAlt} />
+                  </div>
                 </ScrollReveal>
               </Col>
               <Col lg={7}>
-                <ScrollReveal animation={secondZoom} delay={baseDelay + 0.1}>
-                  <Card className={`${styles.card} ${index === 1 ? styles.green : ""}`}>
+                <ScrollReveal animation={secondZoom} delay={baseDelay + 0.1} as="div" className={`${styles.card} ${index === 1 ? styles.green : ""}`}>
                     {row.listItems.map((item, i) => {
                       const HeadingTag = `h${item.level}`;
                       return (
@@ -80,7 +74,6 @@ function CardSection() {
                         </div>
                       );
                     })}
-                  </Card>
                 </ScrollReveal>
               </Col>
             </Row>

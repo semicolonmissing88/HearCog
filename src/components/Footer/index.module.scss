@@ -1,27 +1,47 @@
-footer{
-      padding: 75px 0 18px 0;
+@use '../../styles/breakpoints' as *;
 
-      .footerContent{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 20px;
-            border-bottom: 2px solid #011632;
-            padding-bottom: 30px;
+footer {
+  padding: 75px 0 18px;
+  @include below($bp-md) {
+    padding: 40px 0 18px;
+  }
 
-      }
+  .footerContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border-bottom: 2px solid #011632;
+    padding-bottom: 30px;
 
-      .footerBottom{
-            padding-top: 30px;
-            font-size: 14px;
-      }
+    @include below($bp-md) {
+      flex-direction: column;
+      padding-bottom: 15px;
+    }
+  }
+
+  .footerBottom {
+    padding-top: 30px;
+    font-size: 14px;
+    @include below($bp-md) {
+      text-align: center;
+      padding-top: 15px;
+    }
+  }
 }
 
-.footerNav{
-      margin: 0;
-      padding: 0;
-      list-style: none !important;
-      display: flex;
-      align-items: center;
-      gap: 22px;
+.footerNav {
+  margin: 0;
+  padding: 0;
+  list-style: none !important;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+
+  @include below($bp-md) {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 0 !important;
+  }
 }

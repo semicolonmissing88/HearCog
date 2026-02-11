@@ -1,3 +1,4 @@
+@use '../../styles/breakpoints' as bp;
 .card {
       background: rgba(255, 59, 48, 0.05);
       border: none;
@@ -6,6 +7,9 @@
       min-height: 100%;
       font-size: 14px;
       padding-bottom: 0 !important;
+      @include bp.below(bp.$bp-md) {
+        padding: 12px !important;
+      }
 
       &.green{
             background: rgba(231, 248, 239, 0.50);

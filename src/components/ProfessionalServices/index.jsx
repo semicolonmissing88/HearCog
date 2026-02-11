@@ -21,7 +21,7 @@ function ProfessionalServices({ services = [], aboutUs }) {
               key={service.id}
               className={`services justify-content-between ${index % 2 === 0 ? "flex-lg-row-reverse" : ""} ${aboutUs ? "align-items-center" : "same-height"}`}
             >
-              <Col lg={5}>
+              <Col xl={5} lg={6} className="mb-lg-0 mb-4">
                 <ScrollReveal animation={imageOnRight ? "fadeLeft" : "fadeRight"} delay={index * ROW_DELAY}>
                   <div className="imgBox">
                     <Image src={service.image} alt={service.imageAlt} />

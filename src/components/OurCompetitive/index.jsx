@@ -22,7 +22,7 @@ function OurCompetitive() {
           desc="A trusted, diagnosis-first approach that connects patients to verified hearing professionals and ensures quality, evidence-based care at every step."
         />
         <Row className="align-items-center flex-lg-row-reverse justify-content-between">
-          <Col lg={5}>
+          <Col xl={5} lg={6} className="mb-lg-0 mb-4">
             <ScrollReveal animation="fadeLeft" delay={0.1}>
               <div className="imgBox">
                 <Image src={img} alt="Our Competitive Advantage" />

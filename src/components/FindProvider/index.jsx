@@ -1,40 +1,10 @@
 import { useForm } from "react-hook-form";
-import { Button, Container } from "react-bootstrap";
+import { Button, Container, Form } from "react-bootstrap";
 import SectionHeading from "../SectionHeading";
-import FormField from "../FormField";
 import { ScrollReveal } from "../ScrollAnimation";
-import styles from "./index.module.scss";
-
-const FIELDS = [
-  { type: "input", name: "location", label: "Location", placeholder: "City, State or Zip" },
-  {
-    type: "select",
-    name: "type",
-    label: "Type",
-    placeholder: "Please select",
-    options: [{ value: "", label: "Please select" }],
-  },
-  {
-    type: "select",
-    name: "speciality",
-    label: "Speciality",
-    placeholder: "Please select",
-    options: [{ value: "", label: "Please select"  }],
-  },
-  {
-    type: "select",
-    name: "language",
-    label: "Language",
-    options: [{ value: "en", label: "English" }],
-  },
-];
 
 function FindProvider() {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
+  const { register, handleSubmit, formState: { errors } } = useForm();
 
   const onSubmit = (data) => console.log(data);
 
@@ -43,23 +13,65 @@ function FindProvider() {
       <Container>
         <SectionHeading title="Find Provider" desc="Imagine hearing the way it should be. You'll know exactly where to go." />
         <ScrollReveal animation="fadeUp" delay={0.15}>
-          <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
-            <div className={styles.fields}>
-              {FIELDS.map((field) => (
-                <FormField
-                  key={field.name}
-                  type={field.type}
-                  name={field.name}
-                  label={field.label}
-                  placeholder={field.placeholder}
-                  options={field.options}
-                  register={register}
-                  error={errors[field.name]}
-                />
-              ))}
-            </div>
-            <Button type="submit"> Find a Provider</Button>
-          </form>
+          <Form className="form findProviderForm" onSubmit={handleSubmit(onSubmit)}>
+            <Form.Group className="form-group" controlId="location">
+              <Form.Label>Location</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="City, State or Zip"
+                {...register("location")}
+                isInvalid={!!errors.location}
+              />
+              {errors.location && (
+                <Form.Control.Feedback type="invalid">{errors.location.message}</Form.Control.Feedback>
+              )}
+            </Form.Group>
+            <Form.Group className="form-group" controlId="type">
+              <Form.Label>Type</Form.Label>
+              <Form.Control
+                as="select"
+                className="form-select"
+                {...register("type")}
+                isInvalid={!!errors.type}
+              >
+                <option value="">Please select</option>
+              </Form.Control>
+              {errors.type && (
+                <Form.Control.Feedback type="invalid">{errors.type.message}</Form.Control.Feedback>
+              )}
+            </Form.Group>
+            <Form.Group className="form-group" controlId="speciality">
+              <Form.Label>Speciality</Form.Label>
+              <Form.Control
+                as="select"
+                className="form-select"
+                {...register("speciality")}
+                isInvalid={!!errors.speciality}
+              >
+                <option value="">Please select</option>
+              </Form.Control>
+              {errors.speciality && (
+                <Form.Control.Feedback type="invalid">{errors.speciality.message}</Form.Control.Feedback>
+              )}
+            </Form.Group>
+            <Form.Group className="form-group" controlId="language">
+              <Form.Label>Language</Form.Label>
+              <Form.Control
+                as="select"
+                className="form-select"
+                {...register("language")}
+                isInvalid={!!errors.language}
+              >
+                <option value="en">English</option>
+              </Form.Control>
+              {errors.language && (
+                <Form.Control.Feedback type="invalid">{errors.language.message}</Form.Control.Feedback>
+              )}
+            </Form.Group>
+            <Button type="submit">
+              Find a Provider
+            </Button>
+          </Form>
         </ScrollReveal>
       </Container>
     </section>

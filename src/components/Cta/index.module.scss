@@ -1,9 +1,14 @@
+@use '../../styles/breakpoints' as bp;
 .cta {
       background-color: #4B2C79;
       position: relative;
       z-index: 1;
       padding: 80px;
       margin-top: 40px;
+      @include bp.below(bp.$bp-md) {
+            padding: 40px 0;
+            margin-top: 20px;
+      }
       &:after,
       &:before {
         position: absolute;
@@ -17,6 +22,10 @@
         background-repeat: no-repeat;
         animation: ctaFloat 4s ease-in-out infinite;
         z-index: -1;
+        @include bp.below(bp.$bp-md) {
+          width: 150px;
+          height: 150px;
+        }
       }
 
       &:before {
@@ -32,6 +41,9 @@
             color: #FFF;
             min-height: 200px;
             align-content: center;
+            @include bp.below(bp.$bp-md) {
+                  max-width: 100%;
+            }
 
             h2 {
                   color: #fff;
@@ -54,6 +66,7 @@
       align-items: center;
       justify-content: center;
       gap: 10px;
+      flex-wrap: wrap;
 
       button {
             min-width: 200px;

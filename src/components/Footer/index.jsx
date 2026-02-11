@@ -1,5 +1,5 @@
 import { Container, Image } from "react-bootstrap";
-import logo from "../../assets/images/footer-logo.svg";
+import logo from "../../assets/images/logo.svg";
 import styles from "./index.module.scss";
 import { Link } from "react-router-dom";
 function Footer() {

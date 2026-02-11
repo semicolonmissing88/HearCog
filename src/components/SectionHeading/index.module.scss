@@ -1,16 +1,30 @@
+@use '../../styles/breakpoints' as bp;
 .sectionHeading {
       text-align: center;
       max-width: 70%;
       margin: 0 auto 50px auto;
+      @include bp.below(bp.$bp-md) {
+            max-width: 100%;
+            margin: 0 auto 30px auto;
+      }
 
       h2 {
             display: inline-block;
             font-size: 42px;
             font-weight: 500;
+            @include bp.below(bp.$bp-md) {
+                  font-size: 30px;
+            }
+            @include bp.below(bp.$bp-xs) {
+                  font-size: 26px;
+            }
       }
 
       &.small{
             max-width: 55%;
+            @include bp.below(bp.$bp-md) {
+                  max-width: 100%;
+            }
       }
 
       &.leftAlign{

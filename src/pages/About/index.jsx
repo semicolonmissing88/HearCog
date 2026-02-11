@@ -75,15 +75,13 @@ function About() {
           />
           <Row>
             {data.ABOUT_CARDS.map((card, index) => (
-              <Col key={card.id} lg={6}>
-                <ScrollReveal animation={index === 0 ? "fadeLeft" : "fadeRight"} delay={index * 0.12}>
-                  <Card>
-                    <div className="badge purple mb-4">{card.badge}</div>
+              <Col key={card.id} lg={6} className={index === 0 ? "mb-lg-0 mb-4" : ""}>
+                <ScrollReveal as="div" animation={index === 0 ? "fadeLeft" : "fadeRight"} delay={index * 0.12} className={"card"}>
+                <div className="badge purple mb-4">{card.badge}</div>
                     <h2>{card.title}</h2>
                     {card.paragraphs.map((text, i) => (
                       <p key={i}>{text}</p>
                     ))}
-                  </Card>
                 </ScrollReveal>
               </Col>
             ))}
@@ -95,7 +93,7 @@ function About() {
         <Container>
           <Row>
             {data.VALUES_CARDS.map((card, i) => (
-              <Col key={card.id} lg={4} className="mb-4">
+              <Col key={card.id} lg={4} md={6} className="mb-4">
                 <ScrollReveal animation="fadeUp" delay={i * 0.12}>
                   <Card>
                     <Image className="mb-4 iconAnimation" width={50} height={50} src={valueIcons[i]} alt={card.title} />
@@ -109,11 +107,11 @@ function About() {
         </Container>
       </section>
       <section className="section">
-        <SectionHeading title={data.WHY_HEARCOG.sectionTitle} desc={data.WHY_HEARCOG.sectionDesc} />
         <Container>
+        <SectionHeading title={data.WHY_HEARCOG.sectionTitle} desc={data.WHY_HEARCOG.sectionDesc} />
           <Row className="align-items-stretch">
-            <Col lg={6} className="mb-4 d-flex flex-lg-column justify-content-between">
-              <ScrollReveal animation="fadeLeft" className="d-flex flex-lg-column justify-content-between">
+            <Col lg={6} className=" d-lg-flex flex-lg-column justify-content-between mb-lg-0 mb-4">
+              <ScrollReveal animation="fadeLeft" className="d-lg-flex flex-lg-column justify-content-between">
                 {data.WHY_HEARCOG.leftCards.map((card, idx) => (
                   <Card key={card.id} className={idx === 0 ? "mb-4" : ""} style={{ minHeight: "unset" }}>
                     <Image className="mb-4 iconAnimation" width={50} height={50} src={whyIcons[card.icon]} alt={card.title} />
@@ -133,8 +131,8 @@ function About() {
                 ))}
               </ScrollReveal>
             </Col>
-            <Col lg={6} className="mb-4 d-flex flex-lg-column justify-content-between">
-              <ScrollReveal animation="fadeRight" delay={0.12} className="d-flex flex-lg-column justify-content-between">
+            <Col lg={6} className=" d-lg-flex flex-lg-column justify-content-between">
+              <ScrollReveal animation="fadeRight" delay={0.12} className="d-lg-flex flex-lg-column justify-content-between">
                 <div className="imgBox mb-4">
                   <Image src={whyImages[data.WHY_HEARCOG.rightImage]} alt="" />
                 </div>
@@ -165,9 +163,9 @@ function About() {
       <section className="section">
         <Container>
           <SectionHeading leftAlign title="Meet Our Experts" desc="Board-certified audiologists and hearing specialists dedicated to your care" />
-          <Row>
+          <Row className="justify-content-center">
             {expertsData.map((expert, index) => (
-              <Col key={expert.id} lg={4}>
+              <Col key={expert.id} lg={4} md={6} className="mb-lg-0 mb-4">
                 <ScrollReveal animation="fadeUp" delay={index * 0.12}>
                   <Card className="ImageCard">
                     <Image src={expert.image} alt={expert.imageAlt} />

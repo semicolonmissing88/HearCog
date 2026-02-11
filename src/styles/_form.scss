@@ -1,3 +1,4 @@
+@use 'breakpoints' as bp;
 .form {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -6,6 +7,24 @@
 
       .full-width {
             grid-column: span 2;
+      }
+      &.findProviderForm{
+            grid-template-columns: repeat(5, 1fr);
+            align-items: flex-end;
+
+            @include bp.below(bp.$bp-lg) {
+                  grid-template-columns: repeat(2, 1fr);
+                  .btn{
+                       grid-column: span 2;
+                  }
+            }
+            @include bp.below(bp.$bp-xs) {
+                  grid-template-columns: repeat(1, 1fr);
+                  gap: 12px;
+                  .btn{
+                       grid-column: span 1;
+                  }
+            }
       }
 }
 

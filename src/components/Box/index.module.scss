@@ -1,3 +1,4 @@
+@use '../../styles/breakpoints' as bp;
 .box {
   background: #F6F5FD;
   padding: 14px 20px;
@@ -6,11 +7,16 @@
   border: 1px solid rgba(106, 90, 224, 0.06);
   margin-bottom: 24px;
   font-size: 14px;
-
+  @include bp.below(bp.$bp-md) {
+    padding: 12px;
+  }
   h5 {
     display: flex;
     align-items: center;
     gap: 14px;
+    @include bp.below(bp.$bp-md) {
+      margin-bottom: 8px;
+    }
   }
 
   &:last-child {

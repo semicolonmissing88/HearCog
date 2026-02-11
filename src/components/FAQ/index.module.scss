@@ -1,5 +1,4 @@
-
-
+@use '../../styles/breakpoints' as bp;
 .accordion {
   max-width: 800px;
   margin: 0 auto;
@@ -29,7 +28,12 @@
     font-size: 22px;
     font-weight: 500;
     color: #011632 !important;
-
+    @include bp.below(bp.$bp-md) {  
+      font-size: 18px;
+    }
+    @include bp.below(bp.$bp-xs) {
+      font-size: 16px;
+    }
     &::after {
       display: none;
     }
@@ -67,6 +71,11 @@
   justify-content: center;
   font-size: 14px;
   transition: background-color 0.2s ease;
+  @include bp.below(bp.$bp-md) {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+  }
 }
 
 .iconOpen {
@@ -82,5 +91,8 @@ padding: 0 24px 14px;
   font-size: 18px;
   line-height: 1.6;
   margin-bottom: 0;
+  @include bp.below(bp.$bp-md) {
+    font-size: 16px;
+  }
 }
 

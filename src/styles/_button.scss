@@ -1,3 +1,4 @@
+@use 'breakpoints' as bp;
 .linkBtn {
       color: #4C1D95;
       font-weight: 500;
@@ -9,13 +10,16 @@
 
 .btn {
       border: none;
-      padding: 14px 25px;
+      padding: 15.5px 25px;
       border-radius: 10px;
       font-weight: 500;
       font-size: 14px;
       position: relative;
       overflow: hidden;
       transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease, color 0.3s ease;
+      @include bp.below(bp.$bp-md) {
+            padding: 12px;
+      }
       &::before {
             content: '';
             position: absolute;
