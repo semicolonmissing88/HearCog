@@ -6,7 +6,7 @@ import Contact from './pages/Contact'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/HearCog">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
