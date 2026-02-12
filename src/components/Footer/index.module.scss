@@ -44,4 +44,7 @@ footer {
     gap: 12px;
     margin-bottom: 0 !important;
   }
+  @include below($bp-xs) {
+   font-size: 14px;
+  }
 }

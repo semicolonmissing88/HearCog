@@ -193,6 +193,9 @@ a {
 
       &.contactUsCard{
             padding: 40px 30px !important;
+            @include bp.below(bp.$bp-lg) {
+                  padding: 20px 15px !important;
+            }
       }
       &.purpleBg{
             background: #C09CF3;

@@ -52,7 +52,59 @@ function ContactUs() {
           <h1 className="heading">Contact Us</h1>
         </ScrollReveal>
         <Card className="contactUsCard">
-          <Row>
+          <Row className="flex-lg-row-reverse">
+          <Col lg={4} className="mb-4">
+              <ScrollReveal animation="fadeRight" delay={0.18}>
+              <Card className="purpleBg justify-content-between">
+                <div className="mb-3">
+                  <h4>Hi! We are always here to help you.</h4>
+                  <p className="mb-4">We’re here to assist you with any inquiries or concerns you may have. Choose the best way to reach us below:</p>
+                  <ul className={styles.contactList}>
+                    {data.map((item, index) => (
+                      <li key={index}>
+                        <Image className="iconAnimation" width={32} height={32} src={item.icon} alt={item.title} />
+                        <div>
+                          <h6 className="mb-0 fw-semibold text-white">{item.title}:</h6>
+                          <p className="m-0">{item.description}</p>
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className={styles.socialListContainer}>
+                  <h6 className="text-white">Connect with us</h6>
+                  <ul className={styles.socialList}>
+                    <li>
+                      <a href="#">
+                        <FaLinkedin />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <FaInstagram />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <FaSnapchat />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <FaXTwitter />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <FaFacebook />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </Card>
+              </ScrollReveal>
+            </Col>
             <Col lg={8}>
               <ScrollReveal animation="fadeLeft" delay={0.1}>
               <h2>Send Us a Message</h2>
@@ -157,58 +209,6 @@ function ContactUs() {
                   </Form>
                 )}
               </Formik>
-              </ScrollReveal>
-            </Col>
-            <Col lg={4}>
-              <ScrollReveal animation="fadeRight" delay={0.18}>
-              <Card className="purpleBg justify-content-between">
-                <div className="mb-3">
-                  <h4>Hi! We are always here to help you.</h4>
-                  <p className="mb-4">We’re here to assist you with any inquiries or concerns you may have. Choose the best way to reach us below:</p>
-                  <ul className={styles.contactList}>
-                    {data.map((item, index) => (
-                      <li key={index}>
-                        <Image className="iconAnimation" width={32} height={32} src={item.icon} alt={item.title} />
-                        <div>
-                          <h6 className="mb-0 fw-semibold text-white">{item.title}:</h6>
-                          <p className="m-0">{item.description}</p>
-                        </div>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div className={styles.socialListContainer}>
-                  <h6 className="text-white">Connect with us</h6>
-                  <ul className={styles.socialList}>
-                    <li>
-                      <a href="#">
-                        <FaLinkedin />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <FaInstagram />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <FaSnapchat />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <FaXTwitter />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <FaFacebook />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </Card>
               </ScrollReveal>
             </Col>
           </Row>
