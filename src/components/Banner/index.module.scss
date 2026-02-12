@@ -4,7 +4,7 @@
       padding: 100px 0 0;
 
       @include bp.below(bp.$bp-lg) {
-            padding: 50px 0 40px;
+            padding: 40px 0 40px;
       }
 
       .letterSpacing1{
@@ -29,6 +29,19 @@
 
       p {
             max-width: 80%;
+            @include bp.below(bp.$bp-md) {
+                  max-width: 100%;
+            }
+      }
+      &.noImage{
+            text-align: center;
+            h1{
+                  display: inline-block;
+            }
+            p{
+                  margin: auto;
+            }
+
       }
 }
 
@@ -89,6 +102,13 @@
             z-index: 1;
             box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
             border-radius: 10px;
+      }
+      &.providerBanner{
+            padding-left: 0;
+            padding-bottom: 0;
+            &:after{
+                  display: none;
+            }
       }
 }
 

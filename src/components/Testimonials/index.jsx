@@ -19,9 +19,9 @@ const TESTIMONIALS = [
   { id: 5, name: "Thomas Daniel", image: avatar1, rating: 5, text: "Phosfluorescently synergize covalent outsourcing through functional strategic theme areas. Assertively scale strategic portals without distinctive relationships. Holisticly cultivate tactical e-services before fully researched sources." },
 ];
 
-function Testimonials() {
+function Testimonials({ noMargin }) {
   return (
-    <section className="section bg">
+    <section className={`section bg ${noMargin ? "mt-0" : ""}`}>
       <Container>
         <SectionHeading
           small

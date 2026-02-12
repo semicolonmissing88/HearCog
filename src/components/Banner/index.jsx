@@ -5,49 +5,53 @@ import phoneIcon from "../../assets/icons/phone.svg";
 import user1 from "../../assets/images/user1.svg";
 import { FaLinkedin } from "react-icons/fa";
 
-function Banner({ data, otherBanner }) {
+function Banner({ data, otherBanner, noImage,provider }) {
   if (!data) return null;
 
   const { heading, description, buttonText, secondButtonText, contactTitle, contactPhone, image, imageAlt, stats } = data;
 
   return (
-    <div className={styles.banner + " " + (otherBanner ? styles.customBanner : "")}>
+    <div className={styles.banner + " " + (otherBanner ? styles.customBanner : "") + (noImage ? " " + styles.noImage : "")}>
       <Container>
         <Row className="align-items-center flex-lg-row-reverse">
-          <Col xl={6} lg={5} className="mb-lg-0 mb-4">
-            <ScrollReveal className={`imgBox ${otherBanner ? styles.otherBanner : ""}`} animation="fadeLeft" delay={0.2}>
-              <Image src={image} alt={imageAlt} />
-            </ScrollReveal>
-          </Col>
-          <Col xl={6} lg={7}>
+          {!noImage && (
+            <Col xl={6} lg={5} className="mb-lg-0 mb-4">
+              <ScrollReveal className={`imgBox ${otherBanner ? styles.otherBanner : ""} ${provider ? styles.providerBanner : ""}`} animation="fadeLeft" delay={0.2}>
+                <Image src={image} alt={imageAlt} />
+              </ScrollReveal>
+            </Col>
+          )}
+          <Col xl={noImage ? 12 : 6} lg={noImage ? 12 : 7}>
             <ScrollReveal as="h1" className="heading" animation="fadeUp">
               {heading}
             </ScrollReveal>
             <ScrollReveal as="p" className={`mb-4 ${styles.letterSpacing1}`} animation="fadeUp" delay={0.1}>
               {description}
             </ScrollReveal>
-            <ScrollReveal className={styles.cta} animation="fadeUp" delay={0.2}>
-              <Button>{buttonText}</Button>
-              {secondButtonText ? (
-                <Button variant="outline" className="ms-2">
-                  {secondButtonText}
-                </Button>
-              ) : (
-                <>
-                  <div className={styles.contactInfo}>
-                    <div className={styles.icon}>
-                      <Image src={phoneIcon} alt="Phone" />
+            {!noImage && (
+              <ScrollReveal className={styles.cta} animation="fadeUp" delay={0.2}>
+                <Button>{buttonText}</Button>
+                {secondButtonText ? (
+                  <Button variant="outline" className="ms-2">
+                    {secondButtonText}
+                  </Button>
+                ) : (
+                  <>
+                    <div className={styles.contactInfo}>
+                      <div className={styles.icon}>
+                        <Image src={phoneIcon} alt="Phone" />
+                      </div>
+                      <div>
+                        <b>{contactTitle}</b>
+                        <small>{contactPhone}</small>
+                      </div>
                     </div>
-                    <div>
-                      <b>{contactTitle}</b>
-                      <small>{contactPhone}</small>
-                    </div>
-                  </div>
-                </>
-              )}
-              <div className={styles.card} />
-            </ScrollReveal>
-            {otherBanner ? (
+                  </>
+                )}
+                <div className={styles.card} />
+              </ScrollReveal>
+            )}
+            {otherBanner || noImage ? (
               ""
             ) : (
               <ScrollReveal animation="fadeUp" delay={0.3}>
@@ -59,14 +63,13 @@ function Banner({ data, otherBanner }) {
                       <small className="text-muted fw-light">Sr Hear Cog</small>
                     </div>
                   </div>
-                  <small  className="text-muted fw-light">Top-quality hearing care delivered by qualified specialists—trusted, precise, and patient-focused.</small>
+                  <small className="text-muted fw-light">Top-quality hearing care delivered by qualified specialists—trusted, precise, and patient-focused.</small>
                   <FaLinkedin className={styles.linkedinIcon} />
-
                 </Card>
               </ScrollReveal>
             )}
 
-            {otherBanner && stats && stats.length > 0 && (
+            {otherBanner && !provider && stats && stats.length > 0 && (
               <ScrollReveal className={styles.cta + " " + styles.otherBannerCta} animation="fadeUp" delay={0.3}>
                 {stats.map((item, index) => (
                   <div key={index} className={styles.iconBox}>

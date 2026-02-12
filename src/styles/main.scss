@@ -3,6 +3,7 @@
 @use 'typography';
 @use 'button';
 @use 'form';
+@use 'tabs';
 @use 'breakpoints' as bp;
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
@@ -205,6 +206,11 @@ a {
             h4{
                   color: #fff;
             }
+      }
+
+      &.grayBg{
+            background-color: #F6F5FD;
+            border-color: #E5E4F0;
       }
 }
 

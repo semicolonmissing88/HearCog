@@ -1,0 +1,23 @@
+{
+  "BANNER_DATA": {
+    "heading": "Join the HearCog Professional Network",
+    "description": "HearCog links hearing-impaired patients with local, qualified professionals to ensure every individual receives comprehensive hearing evaluations.",
+    "buttonText": "Join Now",
+    "secondButtonText": "Learn More",
+    "image": "dummy.png",
+    "imageAlt": "Join as Provider"
+  },
+  "VALUES_CARDS": [
+    {"id": 1, "icon": "i1.svg", "title": "Reach More Patients", "description": "Expand your practice by gaining access to more patients seeking reliable hearing care through HearCog's trusted platform."},
+    {"id": 2, "icon": "i2.svg", "title": "Improve Access to Care", "description": "Help increase accessibility to quality hearing healthcare by connecting with patients in need of your specialized services."},
+    {"id": 3, "icon": "i3.svg", "title": "Network Effect Value", "description": "Gain more exposure by joining a directory that connects you with patients through a network of verified professionals in your area."},
+    {"id": 4, "icon": "i4.svg", "title": "Highlight Your Expertise", "description": "Showcase your qualifications and specialties to attract patients who need your specific expertise, helping them find a professional they can trust."},
+    {"id": 5, "icon": "i5.svg", "title": "Be Part of a Trusted Directory", "description": "Be verified as a trusted healthcare provider. Your profile becomes part of a curated network of professionals committed to patient care and safety."}
+  ],
+  "WHO_CAN_JOIN": [
+    {"id": 1, "title": "Audiologist", "fullWidth": false},
+    {"id": 2, "title": "Hearing Instrument Specialists", "fullWidth": false},
+    {"id": 3, "title": "ENTs and Otolaryngologists", "fullWidth": false},
+    {"id": 4, "title": "Advanced hearing healthcare providers with verified credentials", "fullWidth": true}
+  ]
+}

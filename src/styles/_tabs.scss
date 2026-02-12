@@ -1,0 +1,31 @@
+@use 'breakpoints' as bp;
+.nav-tabs{
+      border: 0;
+      justify-content: center;
+      background-color: #F6F5FD;
+      border-radius: 10px;
+      padding: 10px;
+      width: max-content;
+      margin: auto;
+      margin-bottom: 50px;
+      @include bp.below(bp.$bp-lg) {
+            margin-bottom: 30px;
+      }
+
+      .nav-link{
+            color: #6D2ECC;
+            font-weight: 500;
+            padding: 10px 30px;
+            border-radius: 10px;
+            border: 0 !important;
+            @include bp.below(bp.$bp-lg) {
+                  padding: 10px 15px;
+            }
+
+            &.active{
+                  background-color: #6D2ECC;
+                  color: #fff;
+            }
+      }
+
+}
