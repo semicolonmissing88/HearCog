@@ -1,10 +1,10 @@
 import { memo, useEffect, useRef, useState } from "react";
 import { Col, Container, Image, Row } from "react-bootstrap";
 import { ScrollReveal } from "../ScrollAnimation";
-import icon1 from "../../assets/icons/s1.svg";
-import icon2 from "../../assets/icons/s2.svg";
-import icon3 from "../../assets/icons/s3.svg";
-import icon4 from "../../assets/icons/s4.svg";
+import icon1 from "../../assets/Icons/s1.svg";
+import icon2 from "../../assets/Icons/s2.svg";
+import icon3 from "../../assets/Icons/s3.svg";
+import icon4 from "../../assets/Icons/s4.svg";
 import styles from "./index.module.scss";
 
 const CARD_STAGGER_DELAY = 0.18;
