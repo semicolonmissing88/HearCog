@@ -3,9 +3,9 @@ import { Button, Card, Col, Container, Form, Image, Row } from "react-bootstrap"
 import { ScrollReveal } from "../ScrollAnimation";
 import styles from "./index.module.scss";
 import * as Yup from "yup";
-import contact1 from "../../assets/icons/contact1.svg";
-import contact2 from "../../assets/icons/contact2.svg";
-import contact3 from "../../assets/icons/contact3.svg";
+import contact1 from "../../assets/Icons/contact1.svg";
+import contact2 from "../../assets/Icons/contact2.svg";
+import contact3 from "../../assets/Icons/contact3.svg";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaFacebook, FaSnapchat, FaXTwitter } from "react-icons/fa6";
 

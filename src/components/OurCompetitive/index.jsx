@@ -3,9 +3,9 @@ import SectionHeading from "../SectionHeading";
 import Box from "../Box";
 import { ScrollReveal } from "../ScrollAnimation";
 import img from "../../assets/images/competitive.png";
-import medicalIcon from "../../assets/icons/c1.svg";
-import verifiedIcon from "../../assets/icons/c2.svg";
-import localIcon from "../../assets/icons/c3.svg";
+import medicalIcon from "../../assets/Icons/c1.svg";
+import verifiedIcon from "../../assets/Icons/c2.svg";
+import localIcon from "../../assets/Icons/c3.svg";
 
 const BOXES = [
   { icon: medicalIcon, title: "Medical-First Approach", description: "We prioritize proper hearing evaluation and evidence-based care before any treatment decisions, ensuring patients receive the right guidance—not shortcuts." },

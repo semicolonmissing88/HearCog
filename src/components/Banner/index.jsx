@@ -1,7 +1,7 @@
 import { Container, Row, Col, Image, Button, Card } from "react-bootstrap";
 import { ScrollReveal } from "../ScrollAnimation";
 import styles from "./index.module.scss";
-import phoneIcon from "../../assets/icons/phone.svg";
+import phoneIcon from "../../assets/Icons/phone.svg";
 import user1 from "../../assets/images/user1.svg";
 import { FaLinkedin } from "react-icons/fa";
 
