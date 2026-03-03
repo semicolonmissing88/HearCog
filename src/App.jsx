@@ -1,10 +1,15 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Layout from './layout/MainLayout'
+import AuthLayout from './layout/AuthLayout'
 import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import HowItWorks from './pages/HowItWorks'
 import JoinProvider from './pages/JoinProvider'
+import Login from './pages/Auth/Login'
+import Signup from './pages/Auth/Signup'
+import ForgotPassword from './pages/Auth/ForgotPassword'
+import ResetPassword from './pages/Auth/ResetPassword'
 
 function App() {
   return (
@@ -18,6 +23,19 @@ function App() {
           <Route path="how-it-works" element={<HowItWorks />} />
           <Route path="join-as-provider" element={<JoinProvider />} />
         </Route>
+        <Route path="login" element={<AuthLayout />}>
+          <Route index element={<Login />} />
+        </Route>
+        <Route path="signup" element={<AuthLayout />}>
+          <Route index element={<Signup />} />
+        </Route>
+        <Route path="forgot-password" element={<AuthLayout />}>
+          <Route index element={<ForgotPassword />} />
+        </Route>
+        <Route path="reset-password" element={<AuthLayout />}>
+          <Route index element={<ResetPassword />} />
+        </Route>
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
   )

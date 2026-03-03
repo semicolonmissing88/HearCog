@@ -11,6 +11,7 @@
     "deploy": "vite build && cp dist/index.html dist/404.html && npx gh-pages -d dist"
   },
   "dependencies": {
+    "@hookform/resolvers": "^5.2.2",
     "bootstrap": "^5.3.8",
     "formik": "^2.4.9",
     "framer-motion": "^12.34.0",

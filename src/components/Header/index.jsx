@@ -1,12 +1,13 @@
 import { useState } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
 import { Container, Image, Button } from 'react-bootstrap'
 import { TbMenu2, TbX } from 'react-icons/tb'
-import logo from "../../assets/images/logo.svg";
+import logo from "../../assets/images/header-light.svg";
 import styles from "./index.module.scss";
 
 function Header() {
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
   const links = [
     {
       id: 1,
@@ -60,8 +61,8 @@ function Header() {
             </ul>
           </nav>
           <div className={styles.cta}>
-            <Link to="/login" className="linkBtn" onClick={() => setOpen(false)}>Sign Up</Link>
-            <Button onClick={() => setOpen(false)}><span>Login</span></Button>
+            <Link to="/signup" className="linkBtn" onClick={() => setOpen(false)}>Sign Up</Link>
+            <Button onClick={() => { setOpen(false); navigate('/login'); }}><span>Login</span></Button>
           </div>
         </div>
       </Container>

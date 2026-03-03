@@ -53,6 +53,15 @@
             }
       }
 
+      &.btn-outline-secondary{
+            border: 1px solid #011632;
+            background-color: transparent;
+            color: #011632;
+            &:hover{
+                  transform: translate(0);
+            }
+      }
+
       &.btn-secondary {
             background-color: #fff;
             color: #011632;
@@ -61,6 +70,40 @@
                   color: #F0B800;
             }
             
+      }
+      &:active{
+            outline: none;
+            box-shadow: none;
+            background: #6D2ECC !important;
+      }
+
+      &:disabled {
+            background-color: #F5F5F5 !important;
+            color: #B6B6B6 !important;
+            transform: none;
+            cursor: not-allowed;
+
+            &:hover {
+                  transform: none;
+                  box-shadow: none;
+            }
+
+            &::before {
+                  display: none;
+            }
+      }
+
+      &.btn-google {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            width: 100%;
+
+            .btn-google__icon {
+                  color: #fff;
+                  flex-shrink: 0;
+            }
       }
 }
 

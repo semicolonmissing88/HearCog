@@ -115,10 +115,9 @@ function ContactUs() {
                 onSubmit={() => {
                   // Add form submission logic (e.g. API call) here
                 }}>
-                {({ handleSubmit, handleChange, handleBlur, values, errors, touched }) => (
-                  <Form className="form" onSubmit={handleSubmit}>
-                    <Form.Group className="form-group" controlId="firstName">
-                      <Form.Label>First name</Form.Label>
+                {({ handleSubmit, handleChange, handleBlur, values, errors, submitCount }) => (
+                  <Form className="form contactForm" onSubmit={handleSubmit}>
+                    <Form.Group className={`form-group input-floating ${values.firstName ? "input-floating-filled" : ""}`} controlId="firstName">
                       <Form.Control
                         type="text"
                         name="firstName"
@@ -126,12 +125,12 @@ function ContactUs() {
                         value={values.firstName}
                         onChange={handleChange}
                         onBlur={handleBlur}
-                        isInvalid={touched.firstName && !!errors.firstName}
+                        isInvalid={submitCount > 0 && !!errors.firstName}
                       />
+                      <Form.Label className="form-label">First name</Form.Label>
                       <Form.Control.Feedback type="invalid">{errors.firstName}</Form.Control.Feedback>
                     </Form.Group>
-                    <Form.Group className="form-group" controlId="lastName">
-                      <Form.Label>Last name</Form.Label>
+                    <Form.Group className={`form-group input-floating ${values.lastName ? "input-floating-filled" : ""}`} controlId="lastName">
                       <Form.Control
                         type="text"
                         name="lastName"
@@ -139,12 +138,12 @@ function ContactUs() {
                         value={values.lastName}
                         onChange={handleChange}
                         onBlur={handleBlur}
-                        isInvalid={touched.lastName && !!errors.lastName}
+                        isInvalid={submitCount > 0 && !!errors.lastName}
                       />
+                      <Form.Label className="form-label">Last name</Form.Label>
                       <Form.Control.Feedback type="invalid">{errors.lastName}</Form.Control.Feedback>
                     </Form.Group>
-                    <Form.Group className="form-group full-width" controlId="email">
-                      <Form.Label>Email</Form.Label>
+                    <Form.Group className={`form-group full-width input-floating ${values.email ? "input-floating-filled" : ""}`} controlId="email">
                       <Form.Control
                         type="email"
                         name="email"
@@ -152,28 +151,25 @@ function ContactUs() {
                         value={values.email}
                         onChange={handleChange}
                         onBlur={handleBlur}
-                        isInvalid={touched.email && !!errors.email}
+                        isInvalid={submitCount > 0 && !!errors.email}
                       />
+                      <Form.Label className="form-label">Email</Form.Label>
                       <Form.Control.Feedback type="invalid">{errors.email}</Form.Control.Feedback>
                     </Form.Group>
-                    <Form.Group className="form-group" controlId="phone">
-                      <div className="d-flex align-items-center justify-content-between">
-                        <Form.Label>Phone Number</Form.Label>
-                        <small className="fw-normal text-muted">(optional)</small>
-                      </div>
+                    <Form.Group className={`form-group input-floating ${values.phone ? "input-floating-filled" : ""}`} controlId="phone">
                       <Form.Control
                         type="tel"
                         name="phone"
-                        placeholder="Enter your phone"
+                        placeholder="Phone Number"
                         value={values.phone}
                         onChange={handleChange}
                         onBlur={handleBlur}
-                        isInvalid={touched.phone && !!errors.phone}
+                        isInvalid={submitCount > 0 && !!errors.phone}
                       />
+                      <Form.Label className="form-label">Phone Number (optional)</Form.Label>
                       <Form.Control.Feedback type="invalid">{errors.phone}</Form.Control.Feedback>
                     </Form.Group>
-                    <Form.Group className="form-group" controlId="reason">
-                      <Form.Label>Reason for Contact</Form.Label>
+                    <Form.Group className={`form-group input-floating ${values.reason ? "input-floating-filled" : ""}`} controlId="reason">
                       <Form.Control
                         as="select"
                         name="reason"
@@ -181,16 +177,16 @@ function ContactUs() {
                         value={values.reason}
                         onChange={handleChange}
                         onBlur={handleBlur}
-                        isInvalid={touched.reason && !!errors.reason}>
+                        isInvalid={submitCount > 0 && !!errors.reason}>
                         <option value="">Please select</option>
                         <option value="1">General Inquiry</option>
                         <option value="2">Technical Support</option>
                         <option value="3">Other</option>
                       </Form.Control>
+                      <Form.Label className="form-label">Reason for Contact</Form.Label>
                       <Form.Control.Feedback type="invalid">{errors.reason}</Form.Control.Feedback>
                     </Form.Group>
-                    <Form.Group className="form-group full-width" controlId="message">
-                      <Form.Label>Message</Form.Label>
+                    <Form.Group className={`form-group full-width input-floating ${values.message ? "input-floating-filled" : ""}`} controlId="message">
                       <Form.Control
                         as="textarea"
                         name="message"
@@ -199,8 +195,9 @@ function ContactUs() {
                         value={values.message}
                         onChange={handleChange}
                         onBlur={handleBlur}
-                        isInvalid={touched.message && !!errors.message}
+                        isInvalid={submitCount > 0 && !!errors.message}
                       />
+                      <Form.Label className="form-label">Message</Form.Label>
                       <Form.Control.Feedback type="invalid">{errors.message}</Form.Control.Feedback>
                     </Form.Group>
                     <Button className="w-100 full-width" type="submit">

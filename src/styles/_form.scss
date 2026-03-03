@@ -1,4 +1,5 @@
-@use 'breakpoints' as bp;
+@use 'breakpoints'as bp;
+
 .form {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -8,21 +9,29 @@
       .full-width {
             grid-column: span 2;
       }
-      &.findProviderForm{
+
+      &.authForm {
+            grid-template-columns: 1fr;
+      }
+
+      &.findProviderForm {
             grid-template-columns: repeat(5, 1fr);
             align-items: flex-end;
 
             @include bp.below(bp.$bp-lg) {
                   grid-template-columns: repeat(2, 1fr);
-                  .btn{
-                       grid-column: span 2;
+
+                  .btn {
+                        grid-column: span 2;
                   }
             }
+
             @include bp.below(bp.$bp-xs) {
                   grid-template-columns: repeat(1, 1fr);
                   gap: 12px;
-                  .btn{
-                       grid-column: span 1;
+
+                  .btn {
+                        grid-column: span 1;
                   }
             }
       }
@@ -36,14 +45,22 @@ label {
 }
 
 .form-control {
-      border-radius: 8px;
-      background: #F3F3F3;
-      border: 0;
+      border-radius: 10px;
+      background: transparent;
+      border: 1px solid #D9D9D9;
       padding: 14px 16px;
-      &:focus{
+      transition: border-color 0.2s, background 0.2s, color 0.2s;
+
+      &:focus {
             outline: none;
             box-shadow: none;
-            background: #F6F5FD;
+            border-color: #6D2ECC;
+            background: transparent;
+            color: #011632;
+
+            &::placeholder {
+                  color: #011632;
+            }
       }
 
       &::placeholder {
@@ -51,16 +68,60 @@ label {
       }
 }
 
+textarea.form-control:focus {
+      color: #011632;
+}
+
+.form-group.input-floating {
+      position: relative;
+
+      .form-label {
+            position: absolute;
+            left: 14px;
+            top: 0;
+            transform: translateY(-50%);
+            margin: 0;
+            font-size: 12px;
+            color: #6D2ECC;
+            background: #fff;
+            padding: 0 8px;
+            border-radius: 4px;
+            pointer-events: none;
+            transition: all 0.2s ease;
+            z-index: 1;
+            opacity: 0;
+      }
+
+      &:focus-within .form-label {
+            opacity: 1;
+      }
+
+      &.input-floating-filled .form-label {
+            opacity: 1;
+      }
+}
+
 .form-select {
       appearance: none;
-      background-color: #F3F3F3;
+      background-color: transparent;
+      border: 1px solid #D9D9D9;
+      border-radius: 10px;
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%239D9D9D' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
       background-repeat: no-repeat;
       background-position: right 16px center;
       background-size: 20px;
-      padding-right: 44px;
+      padding: 14px 44px 14px 16px;
       cursor: pointer;
       color: #9D9D9D;
+      transition: border-color 0.2s, background 0.2s, color 0.2s;
+
+      &:focus {
+            outline: none;
+            box-shadow: none;
+            border-color: #6D2ECC;
+            background-color: transparent;
+            color: #011632;
+      }
 
       &.has-value {
             color: #3C4959;
@@ -72,5 +133,36 @@ label {
 
       option[value=""] {
             color: #9D9D9D;
+      }
+}
+
+.divider{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin: 35px auto;
+      max-width: 85%;
+      width: 100%;
+
+      .line {
+            max-width: 100%;
+            flex: 1 1 0%;
+            height: 0.5px;
+            background: #999;
+            opacity: 0.5;
+            
+      }
+      .text {
+            font-size: 14px;
+            color: #999;
+      }
+}
+
+.form-check{
+      label{
+            font-weight: 400 !important;
+            color: #011632;
+            margin-bottom: 0;
       }
 }
