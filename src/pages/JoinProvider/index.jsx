@@ -3,6 +3,7 @@ import Testimonials from "../../components/Testimonials";
 import FAQ from "../../components/FAQ";
 import Cta from "../../components/Cta";
 import { Button, Col, Container, Image, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import SectionHeading from "../../components/SectionHeading";
 import { ScrollReveal } from "../../components/ScrollAnimation";
 import data from "./data.json";
@@ -49,8 +50,8 @@ function JoinProvider() {
             ))}
           </Row>
           <div className="d-flex align-items-center justify-content-center gap-3">
-            <Button>Get Started Today</Button>
-            <Button variant="outline">Meet Our Team</Button>
+            <Button as={Link} to="/signup">Get Started Today</Button>
+            <Button variant="outline" as={Link} to="/about">Meet Our Team</Button>
           </div>
         </Container>
       </section>

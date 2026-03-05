@@ -1,4 +1,5 @@
 import { Container, Row, Col, Image, Button, Card } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { ScrollReveal } from "../ScrollAnimation";
 import styles from "./index.module.scss";
 import phoneIcon from "../../assets/Icons/phone.svg";
@@ -8,7 +9,7 @@ import { FaLinkedin } from "react-icons/fa";
 function Banner({ data, otherBanner, noImage,provider }) {
   if (!data) return null;
 
-  const { heading, description, buttonText, secondButtonText, contactTitle, contactPhone, image, imageAlt, stats } = data;
+  const { heading, description, buttonText, buttonLink, secondButtonText, contactTitle, contactPhone, image, imageAlt, stats } = data;
 
   return (
     <div className={styles.banner + " " + (otherBanner ? styles.customBanner : "") + (noImage ? " " + styles.noImage : "")}>
@@ -30,12 +31,16 @@ function Banner({ data, otherBanner, noImage,provider }) {
             </ScrollReveal>
             {!noImage && (
               <ScrollReveal className={styles.cta} animation="fadeUp" delay={0.2}>
-                <Button>{buttonText}</Button>
+                {buttonLink ? (
+                  <Button as={Link} to={buttonLink}>{buttonText}</Button>
+                ) : (
+                  <Button>{buttonText}</Button>
+                )}
                 {secondButtonText ? (
                   <Button variant="outline" className="ms-2">
                     {secondButtonText}
                   </Button>
-                ) : (
+                ) : (contactTitle && contactPhone) ? (
                   <>
                     <div className={styles.contactInfo}>
                       <div className={styles.icon}>
@@ -47,7 +52,7 @@ function Banner({ data, otherBanner, noImage,provider }) {
                       </div>
                     </div>
                   </>
-                )}
+                ) : null}
                 <div className={styles.card} />
               </ScrollReveal>
             )}
