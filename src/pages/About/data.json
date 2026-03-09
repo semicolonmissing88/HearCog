@@ -94,8 +94,6 @@
         "title": "Supporting Professionals",
         "intro": "We collaborate with audiologists, ENT specialists, and healthcare providers to deliver comprehensive care. Our platform enables seamless referrals, shared patient insights, and coordinated treatment plans.",
         "list": ["Secure data sharing and collaboration tools", "Evidence-based treatment protocols", "Continuing education and professional development"],
-        "buttonText": "Learn more",
-        "buttonLink": "/assessment-testing",
         "image": "dummy.png",
         "imageAlt": "Assessment & Testing"
       },
@@ -105,8 +103,6 @@
         "title": "Empowering Informed Decisions",
         "intro": "We believe patients should understand their hearing health fully. Through clear communication, detailed assessments, and transparent guidance, we help you make confident choices about your care.",
         "list": ["Easy-to-understand test results and reports", "Personalized treatment options explained clearly", "Ongoing education and support resources"],
-        "buttonText": "Learn more",
-        "buttonLink": "/assessment-testing",
         "image": "dummy.png",
         "imageAlt": "Assessment & Testing"
       }

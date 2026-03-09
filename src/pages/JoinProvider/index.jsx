@@ -51,7 +51,7 @@ function JoinProvider() {
           </Row>
           <div className="d-flex align-items-center justify-content-center gap-3">
             <Button as={Link} to="/signup">Get Started Today</Button>
-            <Button variant="outline" as={Link} to="/about">Meet Our Team</Button>
+            <Button variant="outline" as={Link} to="/about">About Us</Button>
           </div>
         </Container>
       </section>

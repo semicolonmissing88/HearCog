@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import ScrollToTop from './components/ScrollToTop'
 import Layout from './layout/MainLayout'
 import AuthLayout from './layout/AuthLayout'
 import Home from './pages/Home'
@@ -14,6 +15,7 @@ import ResetPassword from './pages/Auth/ResetPassword'
 function App() {
   return (
     <BrowserRouter basename="/HearCog">
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />

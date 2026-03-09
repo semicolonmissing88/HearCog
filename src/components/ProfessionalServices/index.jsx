@@ -30,7 +30,7 @@ function ProfessionalServices({ services = [], aboutUs }) {
               </Col>
               <Col lg={6}>
                 <ScrollReveal animation={imageOnRight ? "fadeRight" : "fadeLeft"} delay={index * ROW_DELAY + 0.1}>
-                  {aboutUs && <div className="badge light mb-4">{service.badgeText}</div>}
+                  {aboutUs && <div className="badge purple mb-4">{service.badgeText}</div>}
                   <h2>{service.title}</h2>
                   <p>{service.intro}</p>
                   <ul className={`list ${aboutUs && "check-list"}`}>
@@ -39,7 +39,9 @@ function ProfessionalServices({ services = [], aboutUs }) {
                     ))}
                   </ul>
                   <p>{service.closing}</p>
-                  <Link to={service.buttonLink} className={`${aboutUs ? "arrowBtn" : "btn btn-primary"}`}>{service.buttonText} {aboutUs && <BsArrowRight />}</Link>
+                  {service.buttonText && service.buttonLink && (
+                    <Link to={service.buttonLink} className={`${aboutUs ? "arrowBtn" : "btn btn-primary"}`}>{service.buttonText} {aboutUs && <BsArrowRight />}</Link>
+                  )}
                 </ScrollReveal>
               </Col>
             </Row>
