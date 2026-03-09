@@ -97,7 +97,7 @@ function About() {
                 <ScrollReveal as="div" animation="fadeUp" delay={i * 0.12} className="card">
                   <Image className="mb-4 iconAnimation" width={50} height={50} src={valueIcons[i]} alt={card.title} />
                   <h5 className="fw-normal">{card.title}</h5>
-                  <p>{card.description}</p>
+                  <p className="mb-0">{card.description}</p>
                 </ScrollReveal>
               </Col>
             ))}
