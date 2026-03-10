@@ -7,6 +7,7 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import HowItWorks from './pages/HowItWorks'
 import JoinProvider from './pages/JoinProvider'
+import ServiceDetail from './pages/ServiceDetail'
 import Login from './pages/Auth/Login'
 import Signup from './pages/Auth/Signup'
 import ForgotPassword from './pages/Auth/ForgotPassword'
@@ -24,6 +25,7 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="how-it-works" element={<HowItWorks />} />
           <Route path="join-as-provider" element={<JoinProvider />} />
+          <Route path="service/:slug" element={<ServiceDetail />} />
         </Route>
         <Route path="login" element={<AuthLayout />}>
           <Route index element={<Login />} />

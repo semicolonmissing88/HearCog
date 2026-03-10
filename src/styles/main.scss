@@ -54,10 +54,12 @@ ul {
             li{
                   position: relative;
                   padding-bottom: 18px;
+                  padding-left: 45px;
                   &:before{
                         content:"";
-                        display: inline-block;
-                        vertical-align: middle;
+                        position: absolute;
+                        left: 0;
+                        top: -3px;
                         background-image: url(../assets/Icons/check.svg);
                         background-size: 22px;
                         background-repeat: no-repeat;

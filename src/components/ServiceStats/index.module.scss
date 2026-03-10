@@ -1,0 +1,35 @@
+@use '../../styles/breakpoints' as bp;
+
+.statsRow {
+      border-bottom: 1px solid #E5E0F5;
+      padding-bottom: 40px;
+  @include bp.below(bp.$bp-md) {
+    > * {
+      margin-bottom: 24px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.value {
+ margin-bottom: 0px;
+  color: #6C3FC5;
+  line-height: 1.2;
+}
+
+.description {
+  font-size: 0.95rem;
+  color: #6B7280;
+  line-height: 1.4;
+}

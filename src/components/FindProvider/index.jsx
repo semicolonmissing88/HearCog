@@ -9,7 +9,7 @@ function FindProvider() {
   const onSubmit = (data) => console.log(data);
 
   return (
-    <section className="section">
+    <section id="find-provider" className="section">
       <Container>
         <SectionHeading title="Find Provider" desc="Imagine hearing the way it should be. You'll know exactly where to go." />
         <ScrollReveal animation="fadeUp" delay={0.15}>

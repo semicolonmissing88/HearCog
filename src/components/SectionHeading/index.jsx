@@ -6,7 +6,7 @@ function SectionHeading({ title, desc, small, leftAlign }) {
   return (
     <ScrollReveal animation="fadeUp" className={className}>
       <h2 className="heading">{title}</h2>
-      <p>{desc}</p>
+      {desc ? <p>{desc}</p> : null}
     </ScrollReveal>
   );
 }

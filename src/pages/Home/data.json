@@ -12,8 +12,9 @@
   "PROFESSIONAL_SERVICES": [
     {
       "id": 1,
-      "title": "Assessment & Testing",
-      "intro": "Every hearing journey begins with proper evaluation. We connect patients with qualified professionals who conduct thorough assessments to understand the full scope of hearing and auditory health.",
+      "slug": "precise-hearing-assessment-testing",
+      "title": "Precise Hearing Assessment & Testing",
+      "intro": "Our evidence-based diagnostic evaluations identify the exact nature and degree of your hearing loss — giving you and your specialist a clear, actionable roadmap to better hearing.",
       "list": [
         "Detailed hearing history and symptom review",
         "Objective and subjective hearing tests",
@@ -21,14 +22,50 @@
       ],
       "closing": "These evaluations help ensure that hearing concerns are addressed correctly—before any treatment decisions are made.",
       "buttonText": "Start a Hearing Assessment",
-      "buttonLink": "/assessment-testing",
+      "buttonLink": "/service/precise-hearing-assessment-testing",
+      "ctaLink": "/signup",
       "image": "service1.png",
-      "imageAlt": "Assessment & Testing"
+      "imageAlt": "Assessment & Testing",
+      "stats": [
+        { "id": 1, "value": "48M+", "description": "Americans with hearing loss go undiagnosed" },
+        { "id": 2, "value": "2–5x", "description": "Improvement in outcomes with early detection" },
+        { "id": 3, "value": "97%", "description": "Accuracy in our diagnostic protocols" },
+        { "id": 4, "value": "1 Visit", "description": "Complete evaluation in a single session" }
+      ],
+      "signsSection": {
+        "heading": "Signs You May Need an Assessment",
+        "listItems": [
+          "You frequently ask people to repeat themselves",
+          "You struggle to follow conversations in noisy places",
+          "You hear ringing or buzzing in your ears (tinnitus)",
+          "Family members notice you raise the TV volume",
+          "You have occupational noise exposure history",
+          "You're 50+ and haven't had a recent hearing check"
+        ],
+        "cards": [
+          { "id": 1, "icon": "ser7.svg", "title": "Targeted Diagnosis", "description": "Pinpoint whether your hearing loss is sensorineural, conductive, or mixed for proper treatment planning." },
+          { "id": 2, "icon": "ser22.svg", "title": "Specialist Referral", "description": "When needed, we coordinate referrals to ENT specialists or neurologists for deeper care." },
+          { "id": 3, "icon": "ser23.svg", "title": "Baseline Tracking", "description": "Establish a precise audiogram baseline to track changes over time and guide future care decisions." }
+        ]
+      },
+      "detailSection": {
+        "title": "A Full Picture of Your Hearing Health",
+        "description": "Our multi-point testing approach ensures nothing is missed — from mild high-frequency loss to complex auditory processing disorders.",
+        "cards": [
+          { "id": 1, "icon": "ser1.svg", "title": "Case History & Intake", "description": "Comprehensive review of symptoms, lifestyle, occupational noise exposure, and family hearing history." },
+          { "id": 2, "icon": "ser2.svg", "title": "Pure Tone Audiometry", "description": "Measures your hearing threshold at multiple frequencies to create a precise audiogram profile." },
+          { "id": 3, "icon": "ser3.svg", "title": "Speech Audiometry", "description": "Evaluates how well you understand speech at varying volumes in both quiet and noisy environments." },
+          { "id": 4, "icon": "ser4.svg", "title": "Tympanometry", "description": "Assesses middle ear function and eardrum mobility to detect conductive hearing issues." },
+          { "id": 5, "icon": "ser5.svg", "title": "Auditory Processing", "description": "Identifies central auditory processing disorders that standard tests may not detect." },
+          { "id": 6, "icon": "ser6.svg", "title": "Results & Report", "description": "Receive a detailed audiological report with findings, diagnosis, and personalized recommendations." }
+        ]
+      }
     },
     {
       "id": 2,
-      "title": "Fitting & Verification",
-      "intro": "When hearing solutions are recommended, precision and verification are essential. Our network professionals follow best practices to ensure accuracy, comfort, and effectiveness.",
+      "slug": "expert-hearing-aid-fitting-verification",
+      "title": "Expert Hearing Aid Fitting & Verification",
+      "intro": "Getting the right device is only half the journey. Precise fitting and real-ear verification ensure your hearing aids are actually performing the way your audiogram demands — not just approximating it.",
       "list": [
         "Ear measurements and impressions when required",
         "Careful selection and programming of hearing solutions",
@@ -36,14 +73,50 @@
       ],
       "closing": "This process ensures that any recommended solution is clinically appropriate and properly validated.",
       "buttonText": "Find a Verified Hearing Professional",
-      "buttonLink": "/find-provider",
+      "buttonLink": "/service/expert-hearing-aid-fitting-verification",
+      "ctaLink": "/#find-provider",
       "image": "service2.png",
-      "imageAlt": "Fitting & Verification"
+      "imageAlt": "Fitting & Verification",
+      "stats": [
+        { "id": 1, "value": "70%", "description": "Of hearing aids fitted without real-ear verification" },
+        { "id": 2, "value": "3×", "description": "Better speech clarity with proper REM fitting" },
+        { "id": 3, "value": "30–45", "description": "Days adjustment period for most patients" },
+        { "id": 4, "value": "100%", "description": "Of our fittings include verification protocols" }
+      ],
+      "signsSection": {
+        "heading": "Prescription-Fit, Not Just Plugged In",
+        "listItems": [
+          "Real-ear measurement ensures devices match your unique ear canal acoustics",
+          "Avoids over- or under-amplification that leads to dissatisfaction",
+          "Increases hearing aid acceptance and daily usage rates",
+          "Follows best practice guidelines from AAA and ASHA",
+          "Personalized programming for phone calls, music, and crowds",
+          "Includes Bluetooth and connectivity setup if applicable"
+        ],
+        "cards": [
+          { "id": 1, "icon": "ser24.svg", "title": "All Device Types Supported", "description": "BTE, RIC, ITE, IIC, and CIC — our audiologists are trained across all major hearing aid styles and manufacturers." },
+          { "id": 2, "icon": "ser25.svg", "title": "Smart Device Integration", "description": "Full setup for smartphone apps, remote programming, and wireless accessories that connect to your lifestyle." },
+          { "id": 3, "icon": "ser26.svg", "title": "Unlimited Fine-Tuning", "description": "Included follow-up appointments ensure your hearing aids continue to perform as your needs evolve." }
+        ]
+      },
+      "detailSection": {
+        "title": "From Selection to Satisfaction",
+        "description": "We follow a structured, clinically-validated protocol to match your hearing devices to your lifestyle and audiological needs.",
+        "cards": [
+          { "id": 1, "icon": "ser1.svg", "title": "Needs Assessment", "description": "We review your audiogram, lifestyle, dexterity, and communication goals to guide device selection." },
+          { "id": 2, "icon": "ser7.svg", "title": "Device Selection", "description": "Choose from a curated range of hearing aids matched to your specific hearing profile and preferences." },
+          { "id": 3, "icon": "ser8.svg", "title": "Real-Ear Measurement", "description": "Probe microphones measure actual sound levels in your ear canal to verify your prescription is met." },
+          { "id": 4, "icon": "ser9.svg", "title": "Programming & Tuning", "description": "Devices are fine-tuned to your exact audiogram with adjustments for different listening environments." },
+          { "id": 5, "icon": "ser10.svg", "title": "Trial & Adjustment", "description": "A supervised trial period lets you experience your hearing aids in real-life settings with follow-up tweaks." },
+          { "id": 6, "icon": "ser11.svg", "title": "Final Verification", "description": "Outcome measures confirm improved speech understanding before the fitting is finalized." }
+        ]
+      }
     },
     {
       "id": 3,
-      "title": "Rehabilitation & Ongoing Care",
-      "intro": "Hearing care does not end with an initial solution. Long-term support and rehabilitation are critical for communication success and cognitive well-being.",
+      "slug": "sustained-hearing-rehabilitation-care",
+      "title": "Sustained Hearing Rehabilitation & Care",
+      "intro": "Hearing better isn't a one-time event — it's an ongoing journey. Our rehabilitation programs and long-term care model ensure you continue to thrive as your hearing needs evolve.",
       "list": [
         "Hearing rehabilitation and communication strategies",
         "Adjustments based on lifestyle and hearing changes",
@@ -51,14 +124,50 @@
       ],
       "closing": "This approach helps patients adapt effectively and maintain long-term hearing health.",
       "buttonText": "Explore Ongoing Hearing Support",
-      "buttonLink": "/ongoing-hearing-support",
+      "buttonLink": "/service/sustained-hearing-rehabilitation-care",
+      "ctaLink": "/contact",
       "image": "service3.png",
-      "imageAlt": "Rehabilitation & Ongoing Care"
+      "imageAlt": "Rehabilitation & Ongoing Care",
+      "stats": [
+        { "id": 1, "value": "6–8 wks", "description": "Average auditory adjustment period for new users" },
+        { "id": 2, "value": "40%", "description": "Of hearing aid users abandon devices without follow-up" },
+        { "id": 3, "value": "85%", "description": "Success rate with structured rehabilitation programs" },
+        { "id": 4, "value": "Lifetime", "description": "Ongoing care available with your HearCog provider" }
+      ],
+      "signsSection": {
+        "heading": "Hearing Loss Is a Lifelong Condition, Not a One-Time Fix",
+        "listItems": [
+          "Hearing naturally changes over time — your care should adapt with it",
+          "Auditory training significantly improves speech understanding in noise",
+          "Regular maintenance extends hearing aid lifespan and performance",
+          "Counseling reduces the anxiety and social isolation hearing loss can cause",
+          "Family education improves communication and reduces frustration",
+          "Ongoing support increases hearing aid satisfaction and usage rates"
+        ],
+        "cards": [
+          { "id": 1, "icon": "ser18.svg", "title": "Aural Rehabilitation Classes", "description": "Group or individual sessions covering speechreading, listening strategies, and assistive technology use." },
+          { "id": 2, "icon": "ser27.svg", "title": "Family Involvement", "description": "We include family members in education sessions so your support network can communicate more effectively with you." },
+          { "id": 3, "icon": "ser28.svg", "title": "Remote Care Options", "description": "Telehealth check-ins and remote programming allow care to continue wherever you are without clinic visits." }
+        ]
+      },
+      "detailSection": {
+        "title": "Your Path to Sustained Better Hearing",
+        "description": "Our comprehensive rehabilitation services address the cognitive, emotional, and practical aspects of living well with hearing loss.",
+        "cards": [
+          { "id": 1, "icon": "ser5.svg", "title": "Auditory Training", "description": "Structured listening exercises that help your brain relearn how to process sounds and speech more effectively." },
+          { "id": 2, "icon": "ser12.svg", "title": "Communication Strategies", "description": "Learn practical techniques for improving conversations in difficult listening environments, at work and at home." },
+          { "id": 3, "icon": "ser13.svg", "title": "Regular Check-ins", "description": "Scheduled follow-up appointments track your progress and adjust your hearing aids as your hearing changes." },
+          { "id": 4, "icon": "ser14.svg", "title": "Counseling & Support", "description": "Emotional support for patients and families adjusting to hearing loss, with connections to peer support groups." },
+          { "id": 5, "icon": "ser15.svg", "title": "Device Maintenance", "description": "Regular cleaning, repairs, and software updates to keep your hearing technology performing at its best." },
+          { "id": 6, "icon": "ser16.svg", "title": "Annual Re-Evaluation", "description": "Yearly audiological assessment to detect changes and update your treatment plan accordingly." }
+        ]
+      }
     },
     {
       "id": 4,
-      "title": "Collaboration & Excellence",
-      "intro": "Quality hearing care relies on collaboration. Our platform supports coordination among hearing professionals, medical specialists, and referral sources to ensure consistent, high-standard care.",
+      "slug": "trusted-network-excellence-collaboration",
+      "title": "Trusted Network of Excellence & Collaboration",
+      "intro": "HearCog connects you with rigorously vetted audiologists who meet the highest standards of clinical excellence, ethical practice, and patient-centered care.",
       "list": [
         "Evidence-based clinical decision support",
         "Outcome tracking and quality assurance",
@@ -66,9 +175,52 @@
       ],
       "closing": "By strengthening professional collaboration, we help improve care quality across the entire hearing healthcare journey.",
       "buttonText": "Learn How We Support Quality Care",
-      "buttonLink": "/quality-care",
+      "buttonLink": "/service/trusted-network-excellence-collaboration",
+      "ctaLink": "/about",
       "image": "service4.png",
-      "imageAlt": "Collaboration & Excellence"
+      "imageAlt": "Collaboration & Excellence",
+      "stats": [
+        { "id": 1, "value": "500+", "description": "Verified audiologists in our national network" },
+        { "id": 2, "value": "4.8★", "description": "Average patient satisfaction rating across providers" },
+        { "id": 3, "value": "100%", "description": "Of providers hold current state licensure and certifications" },
+        { "id": 4, "value": "24/7", "description": "Patient support and care coordination available" }
+      ],
+      "signsSection": {
+        "heading": "Your Health Deserves Verified Excellence",
+        "listItems": [
+          "All providers undergo credential verification and background checks",
+          "Transparent pricing and no-surprise billing practices",
+          "Evidence-based treatment recommendations, not sales quotas",
+          "Full disclosure of device options from multiple manufacturers",
+          "Patient data privacy and HIPAA compliance guaranteed",
+          "Clear care coordination with your primary care physician"
+        ],
+        "cards": [
+          { "id": 1, "icon": "ser29.svg", "title": "National Network", "description": "Access to vetted hearing care professionals across the country, all meeting the same rigorous standards." },
+          { "id": 2, "icon": "ser30.svg", "title": "Specialist Coordination", "description": "Direct communication channels with ENT physicians and other medical specialists for complex cases." },
+          { "id": 3, "icon": "ser31.svg", "title": "Patient Advocacy", "description": "Your HearCog provider acts as your advocate, ensuring you receive the care you deserve." }
+        ]
+      },
+      "detailSection": {
+        "title": "What Makes a HearCog Provider",
+        "description": "We maintain strict quality standards to ensure every patient receives exceptional, evidence-based hearing care.",
+        "cards": [
+          { "id": 1, "icon": "ser17.svg", "title": "Clinical Credentials", "description": "All providers hold current state licensure and nationally recognized certifications in audiology." },
+          { "id": 2, "icon": "ser1.svg", "title": "Best Practice Compliance", "description": "Regular audits ensure adherence to AAA, ASHA, and manufacturer best practice guidelines." },
+          { "id": 3, "icon": "ser18.svg", "title": "Continuing Education", "description": "Mandatory annual training keeps providers current on the latest hearing care technologies and methods." },
+          { "id": 4, "icon": "ser19.svg", "title": "Patient Experience Reviews", "description": "Ongoing patient feedback and satisfaction tracking to maintain quality standards across the network." },
+          { "id": 5, "icon": "ser20.svg", "title": "Multidisciplinary Coordination", "description": "Seamless collaboration with ENTs, neurologists, and other specialists for comprehensive care." },
+          { "id": 6, "icon": "ser21.svg", "title": "Ethical Practice Standards", "description": "Commitment to transparency, informed consent, and patient-centered care in all clinical decisions." }
+        ]
+      }
     }
+  ],
+  "WHY_JOIN_CARDS": [
+    { "id": 1, "icon": "i1.svg", "title": "Verified Professionals", "description": "Connect with rigorously vetted audiologists who meet the highest clinical and ethical standards." },
+    { "id": 2, "icon": "i2.svg", "title": "Care Close to You", "description": "Find qualified hearing professionals within 25 miles for convenient, personalized care." },
+    { "id": 3, "icon": "i3.svg", "title": "Evidence-Based Care", "description": "Trust in diagnostic and treatment protocols backed by clinical evidence and best practices." },
+    { "id": 4, "icon": "i4.svg", "title": "Ongoing Support", "description": "Lifelong care coordination and follow-up to ensure your hearing needs are always met." },
+    { "id": 5, "icon": "i5.svg", "title": "Easy to Get Started", "description": "Simple, straightforward process to find a provider and schedule your evaluation." },
+    { "id": 6, "icon": "i6.svg", "title": "Nationwide Network", "description": "Access trusted hearing care wherever you are—our verified network spans the country." }
   ]
 }

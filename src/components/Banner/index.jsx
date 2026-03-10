@@ -6,13 +6,20 @@ import phoneIcon from "../../assets/Icons/phone.svg";
 import user1 from "../../assets/images/user1.svg";
 import { FaLinkedin } from "react-icons/fa";
 
-function Banner({ data, otherBanner, noImage,provider }) {
+function Banner({ data, otherBanner, noImage, provider, serviceId }) {
   if (!data) return null;
 
   const { heading, description, buttonText, buttonLink, secondButtonText, contactTitle, contactPhone, image, imageAlt, stats } = data;
 
+  const classNames = [
+    styles.banner,
+    otherBanner && styles.customBanner,
+    noImage && styles.noImage,
+    serviceId === "trusted-network-excellence-collaboration" && styles.service4,
+  ].filter(Boolean).join(" ");
+
   return (
-    <div className={styles.banner + " " + (otherBanner ? styles.customBanner : "") + (noImage ? " " + styles.noImage : "")}>
+    <div className={classNames}>
       <Container>
         <Row className="align-items-center flex-lg-row-reverse">
           {!noImage && (
@@ -22,7 +29,7 @@ function Banner({ data, otherBanner, noImage,provider }) {
               </ScrollReveal>
             </Col>
           )}
-          <Col xl={noImage ? 12 : 6} lg={noImage ? 12 : 7}>
+          <Col xl={noImage ? 12 : 6} lg={noImage ? 12 : 7} className={noImage && "headingBox"}>
             <ScrollReveal as="h1" className="heading" animation="fadeUp">
               {heading}
             </ScrollReveal>
