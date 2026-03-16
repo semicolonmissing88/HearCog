@@ -22,7 +22,9 @@ import aboutIcon3 from "../../assets/Icons/abt3.svg";
 import aboutImg from "../../assets/images/abt1.png";
 import service2Img from "../../assets/images/service4.png";
 import service5Img from "../../assets/images/serivce5.png";
-import teamImg from "../../assets/images/team.png";
+import team1Img from "../../assets/images/team1.png";
+import team2Img from "../../assets/images/team2.png";
+import team3Img from "../../assets/images/team3.png";
 import ProfessionalServices from "../../components/ProfessionalServices";
 import Journey from "../../components/Journey";
 import j1 from "../../assets/Icons/j1.svg";
@@ -61,7 +63,7 @@ const journeyData = data.JOURNEY
     }
   : null;
 
-const expertImages = { "avatar1.png": teamImg, "avatar2.png": teamImg, "avatar3.png": teamImg };
+const expertImages = { "avatar1.png": team1Img, "avatar2.png": team2Img, "avatar3.png": team3Img };
 const expertsData = (data.EXPERTS ?? []).map((expert) => ({
   ...expert,
   image: expertImages[expert.image] ?? bannerImg,
