@@ -8,7 +8,7 @@ import SectionHeading from "../../components/SectionHeading";
 import { ScrollReveal } from "../../components/ScrollAnimation";
 import ServiceProcessSection from "../../components/ServiceProcessSection";
 import data from "./data.json";
-import bannerImg from "../../assets/images/dummy.png";
+import aboutBannerImg from "../../assets/images/aboutBanner.png";
 import icon1 from "../../assets/Icons/a1.svg";
 import icon2 from "../../assets/Icons/a2.svg";
 import valueIcon1 from "../../assets/Icons/i1.svg";
@@ -27,7 +27,7 @@ const whyJoinSection = {
 
 const bannerData = {
   ...data.BANNER_DATA,
-  image: bannerImg,
+  image: aboutBannerImg,
   stats: data.BANNER_DATA.stats?.map((stat, i) => ({
     ...stat,
     icon: [icon1, icon2][i] ?? stat.icon,

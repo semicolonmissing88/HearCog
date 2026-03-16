@@ -7,6 +7,7 @@ import SectionHeading from "../../components/SectionHeading";
 import { ScrollReveal } from "../../components/ScrollAnimation";
 import data from "./data.json";
 import bannerImg from "../../assets/images/dummy.png";
+import aboutBannerImg from "../../assets/images/aboutBanner.png";
 import icon1 from "../../assets/Icons/a1.svg";
 import icon2 from "../../assets/Icons/a2.svg";
 import valueIcon1 from "../../assets/Icons/i1.svg";
@@ -19,6 +20,9 @@ import aboutIcon from "../../assets/Icons/abt1.svg";
 import aboutIcon2 from "../../assets/Icons/abt2.svg";
 import aboutIcon3 from "../../assets/Icons/abt3.svg";
 import aboutImg from "../../assets/images/abt1.png";
+import service2Img from "../../assets/images/service4.png";
+import service5Img from "../../assets/images/serivce5.png";
+import teamImg from "../../assets/images/team.png";
 import ProfessionalServices from "../../components/ProfessionalServices";
 import Journey from "../../components/Journey";
 import j1 from "../../assets/Icons/j1.svg";
@@ -33,14 +37,14 @@ const whyImages = { "abt1.png": aboutImg };
 
 const bannerData = {
   ...data.BANNER_DATA,
-  image: bannerImg,
+  image: aboutBannerImg,
   stats: data.BANNER_DATA.stats?.map((stat, i) => ({
     ...stat,
     icon: [icon1, icon2][i] ?? stat.icon,
   })),
 };
 
-const serviceImages = { "dummy.png": bannerImg };
+const serviceImages = { "dummy.png": bannerImg, "service2.png": service2Img, "service5.png": service5Img };
 const professionalServicesData = (data.PROFESSIONAL_SERVICES ?? data.WHY_HEARCOG?.PROFESSIONAL_SERVICES ?? []).map((s) => ({
   ...s,
   image: serviceImages[s.image],
@@ -57,7 +61,7 @@ const journeyData = data.JOURNEY
     }
   : null;
 
-const expertImages = { "avatar1.png": bannerImg, "avatar2.png": bannerImg, "avatar3.png": bannerImg };
+const expertImages = { "avatar1.png": teamImg, "avatar2.png": teamImg, "avatar3.png": teamImg };
 const expertsData = (data.EXPERTS ?? []).map((expert) => ({
   ...expert,
   image: expertImages[expert.image] ?? bannerImg,
