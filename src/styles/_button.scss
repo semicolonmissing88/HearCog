@@ -17,6 +17,16 @@
       position: relative;
       overflow: hidden;
       transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease, color 0.3s ease;
+      /* neutralize default browser active/focus colour changes (blue highlight)
+         and remove focus outline so the button retains its intended styles */
+      &:focus,
+      &:active {
+            outline: none;
+            box-shadow: none;
+            background-color: inherit;
+            color: inherit;
+      }
+      -webkit-tap-highlight-color: transparent;
       @include bp.below(bp.$bp-md) {
             padding: 12px;
       }
@@ -55,13 +65,48 @@
 
       &.btn-secondary {
             background-color: #fff;
-            color: #011632;
+                                    color: #6D2ECC;
             &:hover{
-                  background-color: #011632;
+                  background-color: #6D2ECC;
                   color: #F0B800;
             }
             
       }
+}
+
+/* Ensure Bootstrap / native button active/focus states do not change color */
+button,
+.btn,
+.btn-primary,
+.btn-outline,
+.btn-outline-primary,
+.btn-secondary,
+a.btn {
+      -webkit-tap-highlight-color: transparent;
+}
+
+.btn-primary,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:hover,
+.btn:active,
+.btn:focus,
+button:active,
+button:focus,
+a.btn:active,
+a.btn:focus {
+      background-color: #6D2ECC !important;
+      color: #fff !important;
+      box-shadow: none !important;
+      outline: none !important;
+}
+
+.btn-outline:active,
+.btn-outline:focus {
+      background-color: rgba(106, 90, 224, 0.06) !important;
+      color: #6D2ECC !important;
+      box-shadow: none !important;
+      outline: none !important;
 }
 
 .arrowBtn{

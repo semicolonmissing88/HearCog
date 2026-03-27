@@ -1,0 +1,176 @@
+@use '../../styles/breakpoints' as bp;
+
+/* Auth form card styling to match reference */
+.container {
+  max-width: 520px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 100%;
+  padding: 24px 40px 48px;
+}
+
+.container h2 {
+  font-size: 32px;
+  line-height: 1.1;
+  margin: 0 0 8px 0;
+  color: #011632;
+  font-weight: 700;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: auto;
+}
+
+.logo img {
+  width: 48px;
+  height: 48px;
+  display: block;
+}
+
+.subtitle {
+  margin-bottom: 18px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.googleBtn {
+  background-color: #6D2ECC;
+  color: #fff;
+  padding: 12px 16px;
+  border: none;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 18px;
+  box-shadow: none;
+}
+
+.googleBtn:active,
+.googleBtn:focus {
+  background-color: #6D2ECC; /* keep same on active/focus */
+  outline: none;
+  box-shadow: none;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #c6c6c6;
+  margin: 18px 0;
+}
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #e6e6e6;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form input {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #e9e9e9;
+  background: #fafafa;
+  font-size: 14px;
+}
+
+.form input:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #e6e6e6;
+}
+
+.formOptions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+
+  /* style the checkbox label for proper vertical alignment and spacing */
+  label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+
+    input[type="checkbox"] {
+      /* ensure checkbox aligns with text baseline */
+      vertical-align: middle;
+      /* purple accent matching buttons */
+      accent-color: #6D2ECC;
+      cursor: pointer;
+    }
+  }
+}
+
+.forgot {
+  color: #6D2ECC;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+}
+
+.signinBtn {
+  background-color: #6D2ECC;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signinBtn:disabled {
+  background: #f0f0f0;
+  color: #bdbdbd;
+  cursor: not-allowed;
+}
+
+.signinBtn:active,
+.signinBtn:focus {
+  background-color: #6D2ECC;
+  outline: none;
+  box-shadow: none;
+}
+
+.signupLink {
+  margin-top: auto;
+  margin-bottom: 0;
+  font-size: 0.95rem;
+  text-align: center;
+}
+.signupLink a {
+  color: #6D2ECC;
+  text-decoration: none;
+}
+
+// responsive adjustments
+@include bp.below(bp.$bp-md) {
+  .container {
+    padding: 28px 20px;
+  }
+}

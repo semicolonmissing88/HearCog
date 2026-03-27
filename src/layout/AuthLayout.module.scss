@@ -1,0 +1,19 @@
+@use '../styles/breakpoints' as bp;
+
+.authWrapper {
+  display: flex;
+  min-height: 100vh;
+
+  // when viewport is narrow stack columns
+  @include bp.below(bp.$bp-md) {
+    flex-direction: column;
+  }
+}
+
+.formContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}

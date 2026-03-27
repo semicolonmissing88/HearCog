@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { Container, Image, Button } from 'react-bootstrap'
 import { TbMenu2, TbX } from 'react-icons/tb'
-import logo from "../../assets/images/logo.svg";
+import logo from "../../assets/images/logo.png";
 import styles from "./index.module.scss";
 
 function Header() {
@@ -60,8 +60,12 @@ function Header() {
             </ul>
           </nav>
           <div className={styles.cta}>
-            <Link to="/login" className="linkBtn" onClick={() => setOpen(false)}>Sign Up</Link>
-            <Button onClick={() => setOpen(false)}><span>Login</span></Button>
+            {/* sign up link */}
+            <Link to="/auth/signup" className="linkBtn" onClick={() => setOpen(false)}>Sign Up</Link>
+            {/* sign in button */}
+            <Button variant="primary" onClick={() => setOpen(false)}>
+              <Link to="/auth/signin" className={styles.buttonLink}>Log In</Link>
+            </Button>
           </div>
         </div>
       </Container>

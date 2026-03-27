@@ -3,6 +3,17 @@
 $border: #EFEFEF;
 $purple: #6D2ECC;
 
+/* exported class for login link inside header button */
+.buttonLink {
+  color: #fff;
+  font-weight: 600;
+
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
 .header {
   padding: 20px 0;
   border-bottom: 1px solid $border;
@@ -190,4 +201,16 @@ $purple: #6D2ECC;
   display: flex;
   align-items: center;
   gap: 30px;
+
+  /* make signup/login CTAs white and bolder, keep white on hover */
+  .linkBtn,
+  .buttonLink {
+    color: #fff;
+    font-weight: 600;
+
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
 }
