@@ -180,7 +180,7 @@
       "image": "service4.png",
       "imageAlt": "Collaboration & Excellence",
       "stats": [
-        { "id": 1, "value": "500+", "description": "Verified hearing health care professionals in our national network" },
+        { "id": 1, "value": "500+", "description": "Verified audiologists in our national network" },
         { "id": 2, "value": "4.8★", "description": "Average patient satisfaction rating across providers" },
         { "id": 3, "value": "100%", "description": "Of providers hold current state licensure and certifications" },
         { "id": 4, "value": "24/7", "description": "Patient support and care coordination available" }
