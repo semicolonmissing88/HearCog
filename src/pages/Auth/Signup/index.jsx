@@ -19,7 +19,10 @@ const initialValues = { fullName: "", email: "", password: "", confirmPassword: 
 
 function Signup() {
   return (
-    <AuthFormShell title="Join Us Today" subtitle="Create your free account to continue.">
+    <AuthFormShell title="Join Us Today" subtitle={<>
+    Hearing Care is Brain Care.<br />
+    Create your free account to continue.
+    </>}>
       <Button className="btn-google" type="button">
         <FaGoogle className="btn-google__icon" size={20} />
         Sign Up with Google
