@@ -31,9 +31,9 @@ function Home() {
       <Banner data={bannerData} />
       <BgHolder />
       <FindProvider />
+      <CardSection />
       <ProfessionalServices services={professionalServicesData} />
       <OurCompetitive />
-      <CardSection />
       <Testimonials />
       <FAQ />
       <Cta />

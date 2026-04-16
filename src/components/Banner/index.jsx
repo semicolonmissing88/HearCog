@@ -2,14 +2,14 @@ import { Container, Row, Col, Image, Button, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { ScrollReveal } from "../ScrollAnimation";
 import styles from "./index.module.scss";
-import phoneIcon from "../../assets/Icons/phone.svg";
+import emailIcon from "../../assets/Icons/email.svg";
 import user1 from "../../assets/images/user1.svg";
 import { FaLinkedin } from "react-icons/fa";
 
 function Banner({ data, otherBanner, noImage, provider, serviceId }) {
   if (!data) return null;
 
-  const { heading, description, buttonText, buttonLink, secondButtonText, contactTitle, contactPhone, image, imageAlt, stats } = data;
+  const { heading, description, buttonText, buttonLink, secondButtonText, contactTitle, contactEmail, image, imageAlt, stats } = data;
 
   const classNames = [
     styles.banner,
@@ -47,15 +47,15 @@ function Banner({ data, otherBanner, noImage, provider, serviceId }) {
                   <Button variant="outline" className="ms-2">
                     {secondButtonText}
                   </Button>
-                ) : (contactTitle && contactPhone) ? (
+                ) : (contactTitle && contactEmail) ? (
                   <>
                     <div className={styles.contactInfo}>
                       <div className={styles.icon}>
-                        <Image src={phoneIcon} alt="Phone" />
+                        <Image src={emailIcon} alt="Email" />
                       </div>
                       <div>
                         <b>{contactTitle}</b>
-                        <small>{contactPhone}</small>
+                        <small>{contactEmail}</small>
                       </div>
                     </div>
                   </>

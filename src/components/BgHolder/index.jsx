@@ -75,6 +75,9 @@ function BgHolder() {
     <section className="section">
       <Container>
         <div className={styles.bgHolder}>
+          <h3 className={styles.sectionTitle}>
+            Hearing Care is Brain Care.
+          </h3>
           <Row className="mt-lg-0 mt-4">
             {data.map((item, index) => (
               <Col lg={3} sm={6} className="mb-lg-0 mb-4" key={item.id}>
