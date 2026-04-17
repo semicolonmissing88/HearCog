@@ -145,7 +145,7 @@
       "imageAlt": "Expert 1",
       "name": "Dr. James Chen",
       "role": "Senior Audiologist",
-      "credentials": "Au.D., CCC-A"
+      "credentials": "Board Certified-Hearing Specialist"
     },
     {
       "id": 2,
@@ -153,7 +153,7 @@
       "imageAlt": "Expert 2",
       "name": "Dr. Sarah Mitchell",
       "role": "Clinical Audiologist",
-      "credentials": "Ph.D., CCC-A"
+      "credentials": "Board Certified-Hearing Specialist"
     },
     {
       "id": 3,
@@ -161,7 +161,7 @@
       "imageAlt": "Expert 3",
       "name": "Dr. David Park",
       "role": "Hearing Specialist",
-      "credentials": "Au.D., FAAA"
+      "credentials": "Board Certified-Hearing Specialist"
     }
   ]
 }
