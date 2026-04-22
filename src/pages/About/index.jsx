@@ -166,7 +166,7 @@ function About() {
       <Journey data={journeyData} />
       <section className="section">
         <Container>
-          <SectionHeading leftAlign title="Meet Our Experts" desc="Board-certified audiologists and hearing specialists dedicated to your care" />
+          <SectionHeading leftAlign title="Meet Our Experts" desc="Board-certified audiologists and hearing instrument specialists dedicated to your care" />
           <Row className="justify-content-center">
             {expertsData.map((expert, index) => (
               <Col key={expert.id} lg={4} md={6} className="mb-lg-0 mb-4">
