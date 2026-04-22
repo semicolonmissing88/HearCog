@@ -1,0 +1,21 @@
+@use '../../styles/breakpoints' as bp;
+
+.cta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 35px;
+
+  @include bp.below(bp.$bp-md) {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 18px;
+  }
+
+  button,
+  a {
+    min-width: 160px;
+    font-size: 18px;
+    padding: 12px 28px;
+  }
+}

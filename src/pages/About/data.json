@@ -16,7 +16,7 @@
       "badge": "Purpose",
       "title": "Our Purpose",
       "paragraphs": [
-        "At HearCog, we exist to make hearing healthcare accessible, understandable, and effective for everyone. We believe that clear hearing transforms lives, enabling deeper connections, richer experiences, and greater confidence.",
+        "At HearCog, we exist to make hearing healthcare accessible, understandable, and effective for everyone. We believe that better hearing transforms lives, enabling deeper connections, richer experiences, and greater confidence.",
         "Our mission is to bridge the gap between advanced audiological science and compassionate patient care. We work tirelessly to ensure that every individual receives personalized attention, evidence-based solutions, and ongoing support."
       ]
     },
@@ -128,7 +128,7 @@
         "id": 3,
         "icon": "j3.svg",
         "title": "Personalized Solution",
-        "description": "We recommend the best plan or device based on your needs, lifestyle, and budget."
+        "description": "We recommend the best plan or hearing instrument based on your needs, lifestyle, and budget."
       },
       {
         "id": 4,

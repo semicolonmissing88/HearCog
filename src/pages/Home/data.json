@@ -4,7 +4,7 @@
     "description": "A nationwide network connecting patients with qualified hearing-care professionals within 25 miles—ensuring personalized, trusted care close to home.",
     "buttonText": "Start Your Hearing Journey",
     "buttonLink": "/signup",
-    "contactTitle": "Contact for Assistance",
+    "contactTitle": "",
     "contactEmail": "support@hearcog.com",
     "image": "banner.png",
     "imageAlt": "Banner"
@@ -86,7 +86,7 @@
       "signsSection": {
         "heading": "Prescription-Fit, Not Just Plugged In",
         "listItems": [
-          "Real-ear measurement ensures devices match your unique ear canal acoustics",
+          "Real-ear measurement ensures hearing instruments match your unique ear canal acoustics",
           "Avoids over- or under-amplification that leads to dissatisfaction",
           "Increases hearing aid acceptance and daily usage rates",
           "Follows best practice guidelines from AAA and ASHA",
@@ -94,19 +94,19 @@
           "Includes Bluetooth and connectivity setup if applicable"
         ],
         "cards": [
-          { "id": 1, "icon": "ser24.svg", "title": "All Device Types Supported", "description": "BTE, RIC, ITE, IIC, and CIC — our audiologists are trained across all major hearing aid styles and manufacturers." },
-          { "id": 2, "icon": "ser25.svg", "title": "Smart Device Integration", "description": "Full setup for smartphone apps, remote programming, and wireless accessories that connect to your lifestyle." },
+          { "id": 1, "icon": "ser24.svg", "title": "All Hearing Instrument Types Supported", "description": "BTE, RIC, ITE, IIC, and CIC — our audiologists are trained across all major hearing aid styles and manufacturers." },
+          { "id": 2, "icon": "ser25.svg", "title": "Smart Hearing Instrument Integration", "description": "Full setup for smartphone apps, remote programming, and wireless accessories that connect to your lifestyle." },
           { "id": 3, "icon": "ser26.svg", "title": "Unlimited Fine-Tuning", "description": "Included follow-up appointments ensure your hearing aids continue to perform as your needs evolve." }
         ]
       },
       "detailSection": {
         "title": "From Selection to Satisfaction",
-        "description": "We follow a structured, clinically-validated protocol to match your hearing devices to your lifestyle and audiological needs.",
+        "description": "We follow a structured, clinically-validated protocol to match your hearing instruments to your lifestyle and audiological needs.",
         "cards": [
-          { "id": 1, "icon": "ser1.svg", "title": "Needs Assessment", "description": "We review your audiogram, lifestyle, dexterity, and communication goals to guide device selection." },
-          { "id": 2, "icon": "ser7.svg", "title": "Device Selection", "description": "Choose from a curated range of hearing aids matched to your specific hearing profile and preferences." },
+          { "id": 1, "icon": "ser1.svg", "title": "Needs Assessment", "description": "We review your audiogram, lifestyle, dexterity, and communication goals to guide hearing instrument selection." },
+          { "id": 2, "icon": "ser7.svg", "title": "Hearing Instrument Selection", "description": "Choose from a curated range of prescription hearing aids matched to your specific hearing profile and preferences." },
           { "id": 3, "icon": "ser8.svg", "title": "Real-Ear Measurement", "description": "Probe microphones measure actual sound levels in your ear canal to verify your prescription is met." },
-          { "id": 4, "icon": "ser9.svg", "title": "Programming & Tuning", "description": "Devices are fine-tuned to your exact audiogram with adjustments for different listening environments." },
+          { "id": 4, "icon": "ser9.svg", "title": "Programming & Tuning", "description": "Hearing instruments are fine-tuned to your exact audiogram with adjustments for different listening environments." },
           { "id": 5, "icon": "ser10.svg", "title": "Trial & Adjustment", "description": "A supervised trial period lets you experience your hearing aids in real-life settings with follow-up tweaks." },
           { "id": 6, "icon": "ser11.svg", "title": "Final Verification", "description": "Outcome measures confirm improved speech understanding before the fitting is finalized." }
         ]
@@ -130,7 +130,7 @@
       "imageAlt": "Rehabilitation & Ongoing Care",
       "stats": [
         { "id": 1, "value": "6–8 wks", "description": "Average auditory adjustment period for new users" },
-        { "id": 2, "value": "40%", "description": "Of hearing aid users abandon devices without follow-up" },
+        { "id": 2, "value": "40%", "description": "Of hearing aid users abandon hearing instruments without follow-up" },
         { "id": 3, "value": "85%", "description": "Success rate with structured rehabilitation programs" },
         { "id": 4, "value": "Lifetime", "description": "Ongoing care available with your HearCog provider" }
       ],
@@ -158,7 +158,7 @@
           { "id": 2, "icon": "ser12.svg", "title": "Communication Strategies", "description": "Learn practical techniques for improving conversations in difficult listening environments, at work and at home." },
           { "id": 3, "icon": "ser13.svg", "title": "Regular Check-ins", "description": "Scheduled follow-up appointments track your progress and adjust your hearing aids as your hearing changes." },
           { "id": 4, "icon": "ser14.svg", "title": "Counseling & Support", "description": "Emotional support for patients and families adjusting to hearing loss, with connections to peer support groups." },
-          { "id": 5, "icon": "ser15.svg", "title": "Device Maintenance", "description": "Regular cleaning, repairs, and software updates to keep your hearing technology performing at its best." },
+          { "id": 5, "icon": "ser15.svg", "title": "Hearing Instrument Maintenance", "description": "Regular cleaning, repairs, and software updates to keep your hearing technology performing at its best." },
           { "id": 6, "icon": "ser16.svg", "title": "Annual Re-Evaluation", "description": "Yearly audiological assessment to detect changes and update your treatment plan accordingly." }
         ]
       }
@@ -191,7 +191,7 @@
           "All providers undergo credential verification and background checks",
           "Transparent pricing and no-surprise billing practices",
           "Evidence-based treatment recommendations, not sales quotas",
-          "Full disclosure of device options from multiple manufacturers",
+          "Full disclosure of hearing instrument options from multiple manufacturers",
           "Patient data privacy and HIPAA compliance guaranteed",
           "Clear care coordination with your primary care physician"
         ],

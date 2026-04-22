@@ -63,7 +63,7 @@ function Banner({ data, otherBanner, noImage, provider, serviceId }) {
                 <div className={styles.card} />
               </ScrollReveal>
             )}
-            {otherBanner || noImage ? (
+            {false && (otherBanner || noImage ? (
               ""
             ) : (
               <ScrollReveal animation="fadeUp" delay={0.3}>
@@ -79,7 +79,7 @@ function Banner({ data, otherBanner, noImage, provider, serviceId }) {
                   <FaLinkedin className={styles.linkedinIcon} />
                 </Card>
               </ScrollReveal>
-            )}
+            ))}
 
             {otherBanner && !provider && stats && stats.length > 0 && (
               <ScrollReveal className={styles.cta + " " + styles.otherBannerCta} animation="fadeUp" delay={0.3}>

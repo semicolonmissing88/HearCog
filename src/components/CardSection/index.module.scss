@@ -51,3 +51,16 @@
             
       }
 }
+
+.cta {
+ display: flex;
+ justify-content: center;
+ margin-bottom: 35px;
+
+  button,
+  a {
+    min-width: 160px;
+    font-size: 18px;
+    padding: 12px 28px;
+  }
+}

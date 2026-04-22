@@ -9,8 +9,8 @@ const FAQ_DATA = [
   {
     id: 1,
     number: 1,
-    question: "Do you sell or provide hearing devices?",
-    answer: "No. We do not sell or manufacture hearing devices. Our role is to connect individuals with qualified hearing healthcare professionals who evaluate, diagnose, and recommend appropriate solutions if needed.",
+    question: "Do you sell or provide hearing instruments?",
+    answer: "No. We do not sell or manufacture hearing instruments. Our role is to connect individuals with qualified hearing healthcare professionals who evaluate, diagnose, and recommend appropriate solutions if needed.",
     type: "faq",
   },
   {
