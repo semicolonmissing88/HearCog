@@ -153,7 +153,7 @@
       "imageAlt": "Expert 2",
       "name": "Dr. Sarah Mitchell",
       "role": "Clinical Audiologist",
-      "credentials": "Ph.D., CCC-A, ABA Certified, BC-HIS"
+      "credentials": "Ph.D., CCC-A, BC-HIS, ABA Certified"
     },
     {
       "id": 3,
@@ -161,7 +161,7 @@
       "imageAlt": "Expert 3",
       "name": "Dr. David Park",
       "role": "Hearing Specialist",
-      "credentials": "Au.D., CCC-A, ABA Certified, BC-HIS"
+      "credentials": "Au.D., CCC-A, BC-HIS, ABA Certified"
     }
   ]
 }
