@@ -1,0 +1,116 @@
+{
+  "hero": {
+    "title": "What Brings You Here Today?",
+    "placeholder": "Search by ZIP code (e.g., 10001)"
+  },
+  "filters": {
+    "heading": "Provider Near By You",
+    "typeLabel": "Select Type",
+    "specialtyLabel": "Select Specialty",
+    "languageLabel": "English"
+  },
+  "emptyState": {
+    "message": "No search results"
+  },
+  "providers": [
+    {
+      "id": 1,
+      "name": "Dr. Michael Lee",
+      "credentials": "PhD, Audiologist",
+      "type": "Audiologist",
+      "specialty": "Hearing Care",
+      "city": "New York",
+      "distance": "2.4 mi",
+      "language": "English",
+      "image": "provider1.png"
+    },
+    {
+      "id": 2,
+      "name": "Dr. Ava Thompson",
+      "credentials": "MD, Otolaryngologist",
+      "type": "Otolaryngologist",
+      "specialty": "ENT",
+      "city": "Newark",
+      "distance": "3.1 mi",
+      "language": "English",
+      "image": "provider2.png"
+    },
+    {
+      "id": 3,
+      "name": "Dr. John Morgan",
+      "credentials": "AuD, CCC-A",
+      "type": "Audiologist",
+      "specialty": "Adult Hearing",
+      "city": "New Haven",
+      "distance": "5.2 mi",
+      "language": "English",
+      "image": "provider3.png"
+    },
+    {
+      "id": 4,
+      "name": "Dr. Emily Carter",
+      "credentials": "DO, ENT Specialist",
+      "type": "ENT",
+      "specialty": "ENT",
+      "city": "Jersey City",
+      "distance": "2.8 mi",
+      "language": "English",
+      "image": "provider4.png"
+    },
+    {
+      "id": 5,
+      "name": "Alex Romero",
+      "credentials": "MS, Audiologist",
+      "type": "Audiologist",
+      "specialty": "Pediatric",
+      "city": "New York",
+      "distance": "4.0 mi",
+      "language": "English",
+      "image": "provider5.png"
+    },
+    {
+      "id": 6,
+      "name": "Dr. Laura Simmons",
+      "credentials": "MD, ENT Surgeon",
+      "type": "ENT",
+      "specialty": "Surgery",
+      "city": "Hoboken",
+      "distance": "1.9 mi",
+      "language": "English",
+      "image": "provider6.png"
+    },
+    {
+      "id": 7,
+      "name": "Dr. Anna Brooks",
+      "credentials": "AuD, CCC-A",
+      "type": "Audiologist",
+      "specialty": "Hearing Aid",
+      "city": "New Jersey",
+      "distance": "3.7 mi",
+      "language": "English",
+      "image": "provider7.png"
+    },
+    {
+      "id": 8,
+      "name": "Dr. David Wilson",
+      "credentials": "PhD, Audiologist",
+      "type": "Audiologist",
+      "specialty": "Diagnostics",
+      "city": "Newark",
+      "distance": "6.2 mi",
+      "language": "English",
+      "image": "provider8.png"
+    },
+    {
+      "id": 9,
+      "name": "Dr. Chris Bennett",
+      "credentials": "MD, Otologist",
+      "type": "Otologist",
+      "specialty": "Otology",
+      "city": "New York",
+      "distance": "5.8 mi",
+      "language": "English",
+      "image": "provider9.png"
+    }
+  ]
+}

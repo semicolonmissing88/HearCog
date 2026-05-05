@@ -1,0 +1,214 @@
+@use "../../styles/breakpoints" as bp;
+
+.section {
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+
+.hero {
+  background-color: #f6f4ff;
+  border-radius: 12px;
+  padding: 70px 24px;
+  text-align: center;
+
+  h1 {
+    margin: 0 auto 24px;
+    max-width: 57%;
+    letter-spacing: -0.01em;
+  }
+}
+
+.searchInputWrap {
+  max-width: 75%;
+  margin: 0 auto;
+  position: relative;
+
+  :global(.form-control) {
+    height: 56px;
+    border-radius: 8px;
+    padding: 0 52px 0 18px;
+    border-color: #d9d9d9;
+    background-color: #fff;
+    font-size: 14px;
+  }
+}
+
+.searchButton {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: transparent;
+  color: #9ca3af;
+  position: absolute;
+  right: 8px;
+  top: 9px;
+  display: grid;
+  place-items: center;
+}
+
+.filtersHeader {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+
+  h2 {
+    margin: 0;
+  }
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.filterSelect {
+  min-width: 162px;
+  height: 44px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #f8f6ff;
+  border-color: #edeaf7;
+}
+
+.emptyState {
+  padding: 85px 0 105px;
+  text-align: center;
+
+  p {
+    margin: 22px 0 0;
+    color: #9d9d9d;
+    font-size: 36px;
+    font-weight: 500;
+  }
+}
+
+.emptyArtwork {
+  opacity: 0.58;
+}
+
+.resultsWrap {
+  padding-top: 32px;
+}
+
+.providerCard {
+  border: 1px solid #edeaf7;
+  border-radius: 10px;
+  box-shadow: 0 0 14px rgba(233, 241, 252, 0.2);
+  overflow: hidden;
+  height: 100%;
+}
+
+.providerImage {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.providerBody {
+  padding: 14px 14px 12px;
+
+  h5 {
+    margin-bottom: 3px;
+    font-size: 22px;
+  }
+}
+
+.credentials {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.providerMeta {
+  margin-bottom: 10px;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #3c4959;
+    font-size: 13px;
+    margin-bottom: 4px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.providerFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  color: #4f5563;
+  font-size: 13px;
+}
+
+.distance {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.specialty {
+  color: #f0b800;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+@include bp.below(bp.$bp-md) {
+  .hero {
+    padding: 45px 16px;
+
+    h1 {
+      max-width: 100%;
+    }
+  }
+
+  .filtersHeader {
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+
+    h2 {
+      margin-bottom: 0;
+    }
+  }
+
+  .filters {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .filterSelect {
+    flex: 1 1 calc(50% - 8px);
+    min-width: 0;
+  }
+
+  .emptyState {
+    padding: 60px 0 70px;
+
+    p {
+      font-size: 28px;
+    }
+  }
+
+  .providerBody h5 {
+    font-size: 20px;
+  }
+}
+
+@include bp.below(bp.$bp-xs) {
+  .filterSelect {
+    flex-basis: 100%;
+  }
+}

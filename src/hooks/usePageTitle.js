@@ -8,6 +8,7 @@ const routeTitles = {
   '/contact': 'HearCog - Contact',
   '/how-it-works': 'HearCog - How it Works',
   '/join-as-provider': 'HearCog - Join as Provider',
+  '/search': 'HearCog - Search',
   '/login': 'HearCog - Sign In',
   '/signup': 'HearCog - Sign Up',
   '/forgot-password': 'HearCog - Forgot Password',

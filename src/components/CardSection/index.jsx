@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import { ScrollReveal } from "../ScrollAnimation";
+import CallToAction from "../CallToAction";
 import styles from "./index.module.scss";
 import img1 from "../../assets/images/card1.png";
 import img2 from "../../assets/images/card2.png";
@@ -149,11 +150,7 @@ function CardSection() {
 
               {/* 👇 Button between rows */}
               {index === 0 && (
-                <div className={styles.cta}>
-                  <a href="#" className="btn btn-primary">
-                    Start Your Hearing Journey
-                  </a>
-                </div>
+                <CallToAction link="/search" />
               )}
             </React.Fragment>
           );
