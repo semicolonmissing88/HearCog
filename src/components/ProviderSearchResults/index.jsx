@@ -32,7 +32,15 @@ function ProviderSearchResults({ content }) {
     });
   }, [providers, typeFilter, specialtyFilter, languageFilter]);
 
-  const hasSearchResults = Boolean(submittedZip) && filteredProviders.length > 0;
+  const displayProviders = useMemo(() => {
+    const searchDigits = submittedZip.replace(/\D/g, "");
+    if (!searchDigits) return filteredProviders;
+    return filteredProviders.filter((provider) => {
+      const providerZip = String(provider.zip ?? "").replace(/\D/g, "");
+      if (!providerZip) return true;
+      return providerZip.startsWith(searchDigits);
+    });
+  }, [filteredProviders, submittedZip]);
 
   const handleSearch = (event) => {
     event.preventDefault();
@@ -44,7 +52,7 @@ function ProviderSearchResults({ content }) {
     <section className={`section ${styles.section}`}>
       <Container>
         <div className={styles.hero}>
-          <h1 class="heading">{content.hero.title}</h1>
+          <h1 className="heading">{content.hero.title}</h1>
           <Form onSubmit={handleSearch} className={styles.searchInputWrap}>
             <Form.Control
               type="text"
@@ -63,7 +71,7 @@ function ProviderSearchResults({ content }) {
 
           <div className={styles.filters}>
             <Form.Select
-              className={styles.filterSelect}
+              className={`${styles.filterSelect}${typeFilter ? " has-value" : ""}`}
               value={typeFilter}
               onChange={(event) => setTypeFilter(event.target.value)}
             >
@@ -75,7 +83,7 @@ function ProviderSearchResults({ content }) {
               ))}
             </Form.Select>
             <Form.Select
-              className={styles.filterSelect}
+              className={`${styles.filterSelect}${specialtyFilter ? " has-value" : ""}`}
               value={specialtyFilter}
               onChange={(event) => setSpecialtyFilter(event.target.value)}
             >
@@ -87,7 +95,7 @@ function ProviderSearchResults({ content }) {
               ))}
             </Form.Select>
             <Form.Select
-              className={styles.filterSelect}
+              className={`${styles.filterSelect}${languageFilter ? " has-value" : ""}`}
               value={languageFilter}
               onChange={(event) => setLanguageFilter(event.target.value)}
             >
@@ -96,10 +104,10 @@ function ProviderSearchResults({ content }) {
           </div>
         </div>
 
-        {hasSearchResults ? (
+        {displayProviders.length > 0 ? (
           <div className={styles.resultsWrap} aria-live="polite">
             <Row>
-              {filteredProviders.map((provider) => (
+              {displayProviders.map((provider) => (
                 <Col key={provider.id} lg={4} md={6} className="mb-4">
                   <ProviderCard provider={provider} />
                 </Col>

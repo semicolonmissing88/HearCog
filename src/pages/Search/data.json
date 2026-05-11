@@ -10,7 +10,7 @@
     "languageLabel": "English"
   },
   "emptyState": {
-    "message": "No search results"
+    "message": "No providers match your search or filters."
   },
   "providers": [
     {
@@ -22,6 +22,7 @@
       "specialty": "Hearing Care",
       "clinicName": "Manhattan Hearing Center",
       "city": "New York",
+      "zip": "10001",
       "distance": "2.4 mi",
       "language": "English",
       "image": "provider1.png"
@@ -35,6 +36,7 @@
       "specialty": "ENT",
       "clinicName": "Newark ENT Associates",
       "city": "Newark",
+      "zip": "07102",
       "distance": "3.1 mi",
       "language": "English",
       "image": "provider2.png"
@@ -48,6 +50,7 @@
       "specialty": "Adult Hearing",
       "clinicName": "Connecticut Audiology Clinic",
       "city": "New Haven",
+      "zip": "06510",
       "distance": "5.2 mi",
       "language": "English",
       "image": "provider3.png"
@@ -61,6 +64,7 @@
       "specialty": "ENT",
       "clinicName": "Jersey City Medical Group",
       "city": "Jersey City",
+      "zip": "07302",
       "distance": "2.8 mi",
       "language": "English",
       "image": "provider4.png"
@@ -74,6 +78,7 @@
       "specialty": "Pediatric",
       "clinicName": "Kids Hearing Center",
       "city": "New York",
+      "zip": "10016",
       "distance": "4.0 mi",
       "language": "English",
       "image": "provider5.png"
@@ -87,6 +92,7 @@
       "specialty": "Surgery",
       "clinicName": "Hoboken Surgical Institute",
       "city": "Hoboken",
+      "zip": "07030",
       "distance": "1.9 mi",
       "language": "English",
       "image": "provider6.png"
@@ -100,6 +106,7 @@
       "specialty": "Hearing Aid",
       "clinicName": "Premium Hearing Solutions",
       "city": "New Jersey",
+      "zip": "07047",
       "distance": "3.7 mi",
       "language": "English",
       "image": "provider7.png"
@@ -113,6 +120,7 @@
       "specialty": "Diagnostics",
       "clinicName": "Advanced Audiology Newark",
       "city": "Newark",
+      "zip": "07103",
       "distance": "6.2 mi",
       "language": "English",
       "image": "provider8.png"
@@ -126,6 +134,7 @@
       "specialty": "Otology",
       "clinicName": "NYC Otology Specialists",
       "city": "New York",
+      "zip": "10022",
       "distance": "5.8 mi",
       "language": "English",
       "image": "provider9.png"
