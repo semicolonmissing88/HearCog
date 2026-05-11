@@ -1,0 +1,140 @@
+@use '../../styles/breakpoints' as bp;
+
+.profileSection {
+  padding-bottom: 30px;
+}
+
+.profileCard {
+  background: #fff;
+  border: 1px solid #edeaf7;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(109, 46, 204, 0.08);
+}
+
+.imageWrapper {
+  width: 100%;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    min-height: 360px;
+  }
+}
+
+.profileBody {
+  padding: 32px;
+}
+
+.profileHeader {
+  margin-bottom: 24px;
+
+  h1 {
+    margin-bottom: 12px;
+  }
+
+  p {
+    margin: 0 0 16px;
+    color: #4f5563;
+    font-size: 15px;
+  }
+}
+
+.badge {
+  display: inline-flex;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background-color: #fff4ce;
+  color: #8b5e00;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.profileMeta {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+  color: #4f5563;
+  font-size: 14px;
+
+  p {
+    margin: 4px 0 0;
+  }
+}
+
+.metaLabel {
+  font-size: 12px;
+  font-weight: 600;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+.bookButton {
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 10px;
+}
+
+.detailContent {
+  display: grid;
+  gap: 30px;
+}
+
+.sectionBlock {
+  background: #fff;
+  border: 1px solid #edeaf7;
+  border-radius: 20px;
+  padding: 28px;
+}
+
+.sectionBlock h2,
+.sectionBlock h3 {
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+.detailsList {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px 20px;
+  color: #4f5563;
+
+  dt {
+    font-weight: 600;
+    color: #011632;
+  }
+
+  dd {
+    margin: 0;
+  }
+}
+
+@include bp.below(bp.$bp-lg) {
+  .profileMeta {
+    grid-template-columns: 1fr;
+  }
+
+  .profileBody {
+    padding: 24px;
+  }
+
+  .sectionBlock {
+    padding: 22px;
+  }
+}
+
+@include bp.below(bp.$bp-md) {
+  .profileBody {
+    padding: 20px;
+  }
+
+  .sectionBlock {
+    padding: 20px;
+  }
+}

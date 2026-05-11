@@ -1,31 +1,8 @@
 import { useMemo, useState } from "react";
-import { Card, Col, Container, Form, Image, Row } from "react-bootstrap";
+import { Col, Container, Form, Row } from "react-bootstrap";
 import { FiSearch } from "react-icons/fi";
-import { HiOutlineBuildingOffice2, HiOutlineMapPin } from "react-icons/hi2";
-import provider1 from "../../assets/images/provider1.png";
-import provider2 from "../../assets/images/provider2.png";
-import provider3 from "../../assets/images/provider3.png";
-import provider4 from "../../assets/images/provider4.png";
-import provider5 from "../../assets/images/provider5.png";
-import provider6 from "../../assets/images/provider6.png";
-import provider7 from "../../assets/images/provider7.png";
-import provider8 from "../../assets/images/provider8.png";
-import provider9 from "../../assets/images/provider9.png";
-import dummy from "../../assets/images/dummy.png";
+import ProviderCard from "../ProviderCard";
 import styles from "./index.module.scss";
-
-const providerImages = {
-  "provider1.png": provider1,
-  "provider2.png": provider2,
-  "provider3.png": provider3,
-  "provider4.png": provider4,
-  "provider5.png": provider5,
-  "provider6.png": provider6,
-  "provider7.png": provider7,
-  "provider8.png": provider8,
-  "provider9.png": provider9,
-  "dummy.png": dummy,
-};
 
 function ProviderSearchResults({ content }) {
   const [zipCode, setZipCode] = useState("");
@@ -34,14 +11,7 @@ function ProviderSearchResults({ content }) {
   const [specialtyFilter, setSpecialtyFilter] = useState("");
   const [languageFilter, setLanguageFilter] = useState("English");
 
-  const providers = useMemo(
-    () =>
-      content.providers.map((provider) => ({
-        ...provider,
-        image: providerImages[provider.image] ?? dummy,
-      })),
-    [content.providers]
-  );
+  const providers = useMemo(() => content.providers, [content.providers]);
 
   const typeOptions = useMemo(
     () => [...new Set(providers.map((provider) => provider.type))],
@@ -74,7 +44,7 @@ function ProviderSearchResults({ content }) {
     <section className={`section ${styles.section}`}>
       <Container>
         <div className={styles.hero}>
-          <h1>{content.hero.title}</h1>
+          <h1 class="heading">{content.hero.title}</h1>
           <Form onSubmit={handleSearch} className={styles.searchInputWrap}>
             <Form.Control
               type="text"
@@ -131,29 +101,7 @@ function ProviderSearchResults({ content }) {
             <Row>
               {filteredProviders.map((provider) => (
                 <Col key={provider.id} lg={4} md={6} className="mb-4">
-                  <Card className={`card ${styles.providerCard}`}>
-                    <Image src={provider.image} alt={provider.name} className={styles.providerImage} />
-                    <div className={styles.providerBody}>
-                      <h5>{provider.name}</h5>
-                      <p className={styles.credentials}>{provider.credentials}</p>
-                      <ul className={styles.providerMeta}>
-                        <li>
-                          <HiOutlineBuildingOffice2 size={14} />
-                          <span>Clinic Name</span>
-                        </li>
-                        <li>
-                          <HiOutlineMapPin size={14} />
-                          <span>{provider.city}</span>
-                        </li>
-                      </ul>
-                      <div className={styles.providerFooter}>
-                        <span className={styles.distance}>{provider.distance}</span>
-                        <span className={styles.specialty}>
-                          {provider.specialty}
-                        </span>
-                      </div>
-                    </div>
-                  </Card>
+                  <ProviderCard provider={provider} />
                 </Col>
               ))}
             </Row>

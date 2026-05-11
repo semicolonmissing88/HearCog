@@ -9,6 +9,7 @@ import HowItWorks from './pages/HowItWorks'
 import JoinProvider from './pages/JoinProvider'
 import ServiceDetail from './pages/ServiceDetail'
 import Search from './pages/Search'
+import ProviderDetail from './pages/ProviderDetail'
 import Login from './pages/Auth/Login'
 import Signup from './pages/Auth/Signup'
 import ForgotPassword from './pages/Auth/ForgotPassword'
@@ -27,6 +28,7 @@ function App() {
           <Route path="how-it-works" element={<HowItWorks />} />
           <Route path="join-as-provider" element={<JoinProvider />} />
           <Route path="search" element={<Search />} />
+          <Route path="provider/:slug" element={<ProviderDetail />} />
           <Route path="service/:slug" element={<ServiceDetail />} />
         </Route>
         <Route path="login" element={<AuthLayout />}>
