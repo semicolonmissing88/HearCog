@@ -138,6 +138,20 @@
       "distance": "5.8 mi",
       "language": "English",
       "image": "provider9.png"
+    },
+    {
+      "id": 10,
+      "slug": "jordan-foley",
+      "name": "Jordan Foley",
+      "credentials": "Hearing Instrument Specialist (HIS)",
+      "type": "Hearing Instrument Specialist (HIS)",
+      "specialty": "Hearing Aid",
+      "clinicName": "Trinity Hearing Care",
+      "city": "Jersey City",
+      "zip": "07310",
+      "distance": "4.3 mi",
+      "language": "English",
+      "image": "provider10.png"
     }
   ]
 }

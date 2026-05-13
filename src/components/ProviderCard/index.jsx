@@ -10,6 +10,7 @@ import providerImage6 from "../../assets/images/provider6.png";
 import providerImage7 from "../../assets/images/provider7.png";
 import providerImage8 from "../../assets/images/provider8.png";
 import providerImage9 from "../../assets/images/provider9.png";
+import providerImage10 from "../../assets/images/provider10.png";
 import styles from "./index.module.scss";
 
 const providerImages = {
@@ -22,6 +23,7 @@ const providerImages = {
   "provider7.png": providerImage7,
   "provider8.png": providerImage8,
   "provider9.png": providerImage9,
+  "provider10.png": providerImage10,
 };
 
 function ProviderCard({ provider }) {

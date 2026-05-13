@@ -13,6 +13,7 @@ import provider6 from "../../assets/images/provider6.png";
 import provider7 from "../../assets/images/provider7.png";
 import provider8 from "../../assets/images/provider8.png";
 import provider9 from "../../assets/images/provider9.png";
+import provider10 from "../../assets/images/provider10.png"
 import dummy from "../../assets/images/dummy.png";
 import styles from "./index.module.scss";
 
@@ -26,6 +27,7 @@ const providerImages = {
   "provider7.png": provider7,
   "provider8.png": provider8,
   "provider9.png": provider9,
+  "provider10.png": provider10,
   "dummy.png": dummy,
 };
 
